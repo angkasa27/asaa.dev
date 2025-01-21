@@ -12,7 +12,7 @@ export default function Home() {
       <div />
       <div className="flex flex-col items-center text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
         <p className=" font-bold">Coming Soon!</p>
-        <p className="">There is a lot of work that need to be done</p>
+        <p className="">There is a lot of work that needs to be done</p>
       </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
