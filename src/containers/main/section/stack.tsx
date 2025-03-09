@@ -19,6 +19,9 @@ import {
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
+// TODO: Change stack to colored icon
+// TODO: Change stack to front end, back end, and complementary tools
+
 export const StackSection = () => {
   return (
     <section id="stack" className="h-screen">

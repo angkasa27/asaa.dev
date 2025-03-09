@@ -26,13 +26,13 @@ export const FloatingBar = () => {
           opacity: 1,
           translateY: 0,
           willChange: "opacity, transform",
-          transition: { duration: 0.2 },
+          transition: { duration: 0.3 },
         },
         hide: {
           opacity: 0,
           translateY: -100,
           willChange: "opacity, transform",
-          transition: { duration: 0.2, delay: 0.2 },
+          transition: { duration: 0.3 },
         },
       }}
       animate={showFloatingBar ? "visible" : "hide"}
