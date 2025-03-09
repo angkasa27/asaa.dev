@@ -2,9 +2,9 @@
 
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
 import { useState } from "react";
-import { DarkModeToggle } from "../dark-mode-toggle";
 import { ButtonIcon } from "@/components/ui/button-icon";
 import { HouseIcon } from "lucide-react";
+import { ThemeToggle } from "../theme-toggle";
 
 export const FloatingBar = () => {
   const { scrollY } = useScroll();
@@ -44,7 +44,7 @@ export const FloatingBar = () => {
       <p>About</p>
       <p>Projects</p>
       <p>Contact</p>
-      <DarkModeToggle />
+      <ThemeToggle />
     </motion.div>
   );
 };
