@@ -63,7 +63,7 @@ export const DarkModeToggle = () => {
         handleThemeChange(activeTheme === "dark" ? "light" : "dark")
       }
     >
-      {activeTheme === "dark" ? <SunIcon /> : <MoonIcon />}
+      {activeTheme === "dark" ? <MoonIcon /> : <SunIcon />}
     </ButtonIcon>
   );
 };
