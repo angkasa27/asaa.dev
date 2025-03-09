@@ -1,3 +1,6 @@
+// TODO: Add in animation to each component or even each word
+// TODO: Add hover effect to some words
+
 export const BioSection = () => {
   return (
     <section id="bio">
