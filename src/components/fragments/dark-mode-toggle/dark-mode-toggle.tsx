@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 
 type Theme = "system" | "dark" | "light";
 
+// TODO: Add loading when check for system theme
+// TODO: Animate icon theme change
+// TODO: Link the navigation
+
 export const DarkModeToggle = () => {
   const [activeTheme, setActiveTheme] = useState<Theme>("system");
 
