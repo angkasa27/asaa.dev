@@ -1,8 +1,8 @@
 "use client";
 
 import { ButtonIcon } from "@/components/ui/button-icon";
-import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
+import { BsMoonStars, BsSun } from "react-icons/bs";
 
 // TODO: Animate icon theme change
 // TODO: Link the navigation
@@ -31,7 +31,8 @@ export const ThemeToggle = () => {
 
   return (
     <ButtonIcon onClick={toggleTheme}>
-      {theme === "dark" ? <MoonIcon /> : <SunIcon />}
+      <BsMoonStars className="hidden dark:block" />{" "}
+      <BsSun className="block dark:hidden" />
     </ButtonIcon>
   );
 };
