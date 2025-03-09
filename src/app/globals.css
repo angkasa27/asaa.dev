@@ -124,3 +124,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+h1 {
+  @apply text-3xl font-bold tracking-tighter sm:text-5xl;
+}
+
+h2 {
+  @apply text-xl font-bold;
+}
