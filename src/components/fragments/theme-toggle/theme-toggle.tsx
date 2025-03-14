@@ -8,10 +8,10 @@ import { BsMoonStars, BsSun } from "react-icons/bs";
 // TODO: Link the navigation
 
 export const ThemeToggle = () => {
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   const switchTheme: () => void = () => {
-    switch (theme) {
+    switch (resolvedTheme) {
       case "light":
         setTheme("dark");
         break;
@@ -19,6 +19,7 @@ export const ThemeToggle = () => {
         setTheme("light");
         break;
       default:
+        setTheme("light");
         break;
     }
   };
