@@ -31,9 +31,12 @@ export const ThemeToggle = () => {
   };
 
   return (
-    <ButtonIcon onClick={toggleTheme}>
-      <BsMoonStars className="hidden dark:block" />{" "}
-      <BsSun className="block dark:hidden" />
+    <ButtonIcon
+      onClick={toggleTheme}
+      className="relative *:absolute *:top-1/2 *:transform *:-translate-y-1/2 *:transition-all *:duration-500 *:ease-out"
+    >
+      <BsMoonStars className="-rotate-180 scale-50 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100" />
+      <BsSun className="rotate-0 scale-100 opacity-100 dark:rotate-180 dark:scale-50 dark:opacity-0" />
     </ButtonIcon>
   );
 };
