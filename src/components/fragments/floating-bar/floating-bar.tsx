@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ButtonIcon } from "@/components/ui/button-icon";
 import { ThemeToggle } from "../theme-toggle";
 import { LuHouse } from "react-icons/lu";
+import Link from "next/link";
 
 export const FloatingBar = () => {
   const { scrollY } = useScroll();
@@ -41,9 +42,9 @@ export const FloatingBar = () => {
       <ButtonIcon>
         <LuHouse />
       </ButtonIcon>
-      <p>About</p>
-      <p>Projects</p>
-      <p>Contact</p>
+      <Link href="/#about">About</Link>
+      <Link href="/#project">Projects</Link>
+      <Link href="/#contact">Contact</Link>
       <ThemeToggle />
     </motion.div>
   );

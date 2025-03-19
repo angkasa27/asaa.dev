@@ -125,6 +125,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* view transition api */
 .page-transition {
   opacity: 0;
