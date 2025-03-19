@@ -7,9 +7,11 @@ import { StackSection } from "./section/stack";
 
 export const MainContainers = () => {
   return (
-    <main className="*:mt-24">
-      <HeroSection />
-      <BioSection />
+    <main className="space-y-24">
+      <div className="space-y-12 sm:pt-12">
+        <HeroSection />
+        <BioSection />
+      </div>
       <StackSection />
       {/* <BentoSection /> */}
       <ProjectSection />
