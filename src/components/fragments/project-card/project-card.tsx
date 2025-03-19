@@ -41,7 +41,7 @@ export const ProjectCard = ({
         />
         <SiGithub className="size-16 absolute" />
       </div>
-      <div className="p-2 flex flex-col gap-1 flex-grow">
+      <div className="p-2 flex flex-col gap-2 flex-grow">
         <p className="font-semibold tracking-tight text-base">{title}</p>
         <p className="max-w-full text-pretty font-sans text-xs text-muted-foreground text-justify flex-grow">
           {description}
@@ -56,7 +56,7 @@ export const ProjectCard = ({
             </div>
           ))}
         </div>
-        <div className="flex gap-1">
+        <div className="flex gap-2">
           {githubUrl && (
             <ButtonRedirect href={githubUrl}>
               <SiGithub className="size-3.5" /> Source
