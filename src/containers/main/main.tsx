@@ -1,6 +1,7 @@
 import { BentoSection } from "./section/bento";
 import { BioSection } from "./section/bio";
 import { HeroSection } from "./section/hero";
+import { ProjectSection } from "./section/project";
 import { StackSection } from "./section/stack";
 
 export const MainContainers = () => {
@@ -10,6 +11,7 @@ export const MainContainers = () => {
       <BioSection />
       <StackSection />
       <BentoSection />
+      <ProjectSection />
     </main>
   );
 };
