@@ -27,9 +27,9 @@ export const HeroSection = () => {
         <h1 className="inline-block xl:text-5xl/none text-center sm:text-left">
           Hi! I&apos;m Dimas Angkasa
         </h1>
-        <h3 className="sm:text-xl text-center sm:text-left">
+        <h4 className="text-center sm:text-left">
           #OpenToWork | Software Engineer 👨‍💻
-        </h3>
+        </h4>
         <div className="flex gap-2 flex-wrap justify-center">
           <Chips>🇮🇩 Jakarta, Indonesia</Chips>
           <Chips>⏰︎ {jakartaTime}</Chips>

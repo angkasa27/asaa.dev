@@ -195,3 +195,7 @@ h2 {
 h3 {
   @apply text-xl font-bold;
 }
+
+h4 {
+  @apply sm:text-xl;
+}
