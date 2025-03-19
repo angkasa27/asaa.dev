@@ -2,16 +2,19 @@ import { ProjectCard } from "@/components/fragments/project-card";
 
 // TODO: Add redirect to project page
 // TODO: Add custom animation
+// TODO: Add animation to "Highlighted"
 
 export const ProjectSection = () => {
   return (
     <section id="project">
       <div className="">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mt-2 text-center">
-          Some of my Projects
+          Highlighted Projects
         </h2>
         <p className="text-muted-foreground  lg:text-base/relaxed text-center">
-          From a project that help me as a developer
+          Building seamless and visually engaging web experiences is my passion.
+          Explore a few of my highlighted projects, showcasing both stunning
+          design and practical web tools.{" "}
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-10">
