@@ -1,4 +1,4 @@
-// import { BentoSection } from "./section/bento";
+import { BentoSection } from "./section/bento";
 import { BioSection } from "./section/bio";
 import { ContactSection } from "./section/contact";
 import { HeroSection } from "./section/hero";
@@ -13,7 +13,7 @@ export const MainContainers = () => {
         <BioSection />
       </div>
       <StackSection />
-      {/* <BentoSection /> */}
+      <BentoSection />
       <ProjectSection />
       <ContactSection />
     </main>

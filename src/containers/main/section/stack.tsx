@@ -26,7 +26,7 @@ export const StackSection = () => {
   return (
     <section id="stack">
       <div className="relative">
-        <InfiniteSlider speedOnHover={20} speed={50}>
+        <InfiniteSlider speedOnHover={10} speed={40}>
           {LANGUAGE_STACK.map((stack, i) => (
             <div
               key={i}
@@ -37,7 +37,7 @@ export const StackSection = () => {
             </div>
           ))}
         </InfiniteSlider>{" "}
-        <InfiniteSlider speedOnHover={20} speed={50} reverse>
+        <InfiniteSlider speedOnHover={10} speed={35} reverse>
           {LIBRARY_STACK.map((stack, i) => (
             <div
               key={i}
@@ -48,7 +48,7 @@ export const StackSection = () => {
             </div>
           ))}
         </InfiniteSlider>{" "}
-        <InfiniteSlider speedOnHover={20} speed={50}>
+        <InfiniteSlider speedOnHover={10} speed={30}>
           {APP_STACK.map((stack, i) => (
             <div
               key={i}
