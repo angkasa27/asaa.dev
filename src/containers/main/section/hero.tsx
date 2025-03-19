@@ -4,6 +4,7 @@ import { id } from "date-fns/locale";
 import { ReactNode, useMemo } from "react";
 import { ClassValue } from "clsx";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 // TODO: Live jakarta time
 // TODO: Add link to resume
@@ -33,7 +34,13 @@ export const HeroSection = () => {
         <div className="flex gap-2 flex-wrap justify-center">
           <Chips>🇮🇩 Jakarta, Indonesia</Chips>
           <Chips>⏰︎ {jakartaTime}</Chips>
-          <Chips className="cursor-pointer">✨ Resume</Chips>
+          <Link
+            href="https://drive.google.com/file/d/1Ak0a0UTBV-KZriZrge81jfZzq8q1Vnle/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Chips className="cursor-pointer">✨ Resume</Chips>
+          </Link>
         </div>
       </div>
       <Image
