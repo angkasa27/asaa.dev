@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { FloatingBar } from "@/components/fragments/floating-bar";
 import { Providers } from "@/providers";
+import { Footer } from "@/components/fragments/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Providers>
           <FloatingBar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
