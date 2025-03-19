@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { FloatingBar } from "@/components/fragments/floating-bar";
 import { Providers } from "@/providers";
 import { Footer } from "@/components/fragments/footer";
+import { Navigation } from "@/components/fragments/navigation/navigation";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,9 +29,10 @@ export default function RootLayout({
         className={`min-h-dvh bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6 transition-colors duration-200 ${inter.variable}`}
       >
         <Providers>
-          <FloatingBar />
-          {children}
-          <Footer />
+          <Navigation>
+            {children}
+            <Footer />
+          </Navigation>
         </Providers>
       </body>
     </html>

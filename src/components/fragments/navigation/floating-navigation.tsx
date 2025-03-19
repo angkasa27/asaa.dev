@@ -2,12 +2,9 @@
 
 import { useMotionValueEvent, useScroll, motion } from "motion/react";
 import { useState } from "react";
-import { ButtonIcon } from "@/components/ui/button-icon";
-import { ThemeToggle } from "../theme-toggle";
-import { LuHouse } from "react-icons/lu";
-import Link from "next/link";
+import { BaseNavigation } from "./base-navigation";
 
-export const FloatingBar = () => {
+export const FloatingNavigation = () => {
   const { scrollY } = useScroll();
   const [showFloatingBar, setShowFloatingBar] = useState(true);
 
@@ -37,15 +34,9 @@ export const FloatingBar = () => {
         },
       }}
       animate={showFloatingBar ? "visible" : "hide"}
-      className="flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-transparent bg-white backdrop-blur-lg shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] p-2 items-center justify-center gap-4"
+      className="max-w-fit fixed top-10 inset-x-0 mx-auto"
     >
-      <ButtonIcon>
-        <LuHouse />
-      </ButtonIcon>
-      <Link href="/#about">About</Link>
-      <Link href="/#project">Projects</Link>
-      <Link href="/#contact">Contact</Link>
-      <ThemeToggle />
+      <BaseNavigation />
     </motion.div>
   );
 };
