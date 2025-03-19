@@ -7,8 +7,8 @@ import { ProjectCard } from "@/components/fragments/project-card";
 export const ProjectSection = () => {
   return (
     <section id="project">
-      <div className="">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mt-2 text-center">
+      <div className="space-y-2">
+        <h2 className="text-center">
           Some Projects
         </h2>
         <p className="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center">

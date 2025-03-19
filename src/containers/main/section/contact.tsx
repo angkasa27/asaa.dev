@@ -4,14 +4,28 @@
 
 export const ContactSection = () => {
   return (
-    <section id="contact">
-      <h2 className="mt-2 text-center">
-        Say Hello 👋
-      </h2>
+    <section id="contact" className="space-y-2">
+      <h2 className="text-center">Say Hello 👋</h2>
       <p className="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center">
-        Let&apos;s vibe and create something epic together. Hit me up if
-        you&apos;re down to collab or explore new opportunities. Slide into my
-        DMs on X/Twitter. Let&apos;s make moves!.
+        Have an exciting project in mind, a brilliant idea you&apos;re eager to
+        discuss, or simply want to explore new possibilities within the realm of
+        web development and design?
+        <a className="text-white" href="mailto:mas.angkasa27@gmail.com">
+          Drop me an email
+        </a>
+      </p>{" "}
+      <p className="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center">
+        Let&apos;s connect on
+        <a
+          className="text-white"
+          href="https://www.linkedin.com/in/dimasangkasa"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          LinkedIn
+        </a>{" "}
+        to expand our networks and discover how we can grow together
       </p>
     </section>
   );
