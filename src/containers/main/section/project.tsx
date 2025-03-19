@@ -9,9 +9,9 @@ export const ProjectSection = () => {
     <section id="project">
       <div className="">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mt-2 text-center">
-          Highlighted Projects
+          Some Projects
         </h2>
-        <p className="text-muted-foreground  lg:text-base/relaxed text-center">
+        <p className="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center">
           Building seamless and visually engaging web experiences is my passion.
           Explore a few of my highlighted projects, showcasing both stunning
           design and practical web tools.{" "}

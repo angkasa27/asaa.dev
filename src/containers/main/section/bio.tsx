@@ -5,7 +5,7 @@ export const BioSection = () => {
   return (
     <section id="bio">
       <h3>About</h3>
-      <div className="max-w-full text-pretty font-sans text-sm sm:text-md leading-6 text-muted-foreground text-justify space-y-2 mt-2">
+      <div className="max-w-full text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-justify space-y-2 mt-2">
         <p>
           I’m Dimas, a Frontend Developer who loves turning ideas into clean,
           functional, and visually stunning web experiences. Whether it’s
