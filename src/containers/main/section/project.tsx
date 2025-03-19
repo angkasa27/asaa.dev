@@ -23,7 +23,7 @@ export const ProjectSection = () => {
           title="SuratBahagia"
           description="Create a web-based platform providing online invitation services for weddings, events, and other special moments. Designed to offer a modern and elegant solution, Surat Bahagia helps users create and share personalized invitations easily. "
           stack={["React", "Tailwind CSS", "NextJS"]}
-          projectUrl="https:/suratbahagia.asaa.dev/"
+          projectUrl="https://suratbahagia.asaa.dev/"
         />
         <ProjectCard
           title="MokletDev"

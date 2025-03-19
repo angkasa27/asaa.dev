@@ -7,7 +7,7 @@ import { StackSection } from "./section/stack";
 
 export const MainContainers = () => {
   return (
-    <main className="*:mt-10">
+    <main className="*:mt-24">
       <HeroSection />
       <BioSection />
       <StackSection />
