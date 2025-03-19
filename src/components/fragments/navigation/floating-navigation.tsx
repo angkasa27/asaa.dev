@@ -34,7 +34,7 @@ export const FloatingNavigation = () => {
         },
       }}
       animate={showFloatingBar ? "visible" : "hide"}
-      className="max-w-fit fixed top-10 inset-x-0 mx-auto"
+      className="max-w-fit fixed top-10 inset-x-0 mx-auto z-40"
     >
       <BaseNavigation />
     </motion.div>
