@@ -30,7 +30,7 @@ export const ProjectCard = ({
         className
       )}
     >
-      <div className="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white">
+      <div className="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white border-b">
         <PreviewUrl
           url={projectUrl}
           width={640}

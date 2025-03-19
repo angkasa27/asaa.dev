@@ -8,9 +8,10 @@ export const ProjectSection = () => {
   return (
     <section id="project">
       <div className="space-y-2">
-        <h2 className="text-center">
-          Some Projects
-        </h2>
+        <div className="rounded-md bg-foreground text-background px-2 py-1 text-sm mx-auto w-fit">
+          Epic Stuff 🔥
+        </div>
+        <h2 className="text-center">Some Projects</h2>
         <p className="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center">
           Building seamless and visually engaging web experiences is my passion.
           Explore a few of my highlighted projects, showcasing both stunning

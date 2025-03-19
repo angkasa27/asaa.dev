@@ -14,8 +14,8 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="flex justify-between mt-24">
-      <p className="text-muted-foreground">
+    <footer className="flex flex-col-reverse sm:flex-row items-center sm:justify-between mt-24 gap-6">
+      <p className="text-muted-foreground text-sm sm:text-base">
         &copy; Dimas Angkasa Nurindra {currentYear}{" "}
       </p>
       <button
