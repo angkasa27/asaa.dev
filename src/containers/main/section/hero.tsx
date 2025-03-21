@@ -6,11 +6,12 @@ import { ClassValue } from "clsx";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-// TODO: Live jakarta time
 // TODO: Add link to resume
 // TODO: Add special chip to resume to indicate it's a link
 // TODO: Add animation to #OpenToWork
 // TODO: Add in animation to each component or even each word
+// TODO: Change clock to email
+// TODO: Onclick location to open google maps
 
 export const HeroSection = () => {
   const jakartaTime = useMemo(

@@ -8,6 +8,8 @@ import { PreviewUrl } from "../preview-url";
 import { Lens } from "../lens";
 
 // TODO: Add custom animation
+// TODO: Button to small
+// TODO: Text to small
 
 export const ProjectCard = ({
   title,

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 // TODO: Add loading screen
-// TODO: Add animation on page change
+// TODO: Add animation on page changes
 
 export default function RootLayout({
   children,
