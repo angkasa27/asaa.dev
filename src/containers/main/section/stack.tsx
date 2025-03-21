@@ -25,7 +25,7 @@ import { VscVscode } from "react-icons/vsc";
 export const StackSection = () => {
   return (
     <section id="stack">
-      <div className="relative">
+      <div className="relative max-sm:-mx-6">
         <InfiniteSlider speedOnHover={10} speed={40}>
           {LANGUAGE_STACK.map((stack, i) => (
             <div
