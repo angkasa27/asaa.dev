@@ -17,7 +17,7 @@ export const BaseNavigation = ({ className }: { className?: ClassValue }) => {
         <LuHouse />
       </ButtonIcon>
       <Link href="/#about">About</Link>
-      <Link href="/#project">Projects</Link>
+      <Link href="/projects">Projects</Link>
       <Link href="/#contact">Contact</Link>
       <ThemeToggle />
     </div>

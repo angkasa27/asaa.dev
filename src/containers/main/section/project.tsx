@@ -1,4 +1,5 @@
 import { ProjectCard } from "@/components/fragments/project-card";
+import Link from "next/link";
 
 // TODO: Add redirect to project page
 // TODO: Add custom animation
@@ -11,11 +12,16 @@ export const ProjectSection = () => {
         <div className="rounded-md bg-foreground text-background px-2 py-1 text-sm mx-auto w-fit">
           Epic Stuff 🔥
         </div>
-        <h2 className="text-center">Some Projects</h2>
+        <h2 className="text-center">Highlighted Projects</h2>
         <p className="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center">
           Building seamless and visually engaging web experiences is my passion.
-          Explore a few of my highlighted projects, showcasing both stunning
-          design and practical web tools.{" "}
+          Explore more of my projects at{" "}
+          <Link
+            href="/projects"
+            className="dark:text-white text-foreground underline"
+          >
+            projects page
+          </Link>
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
