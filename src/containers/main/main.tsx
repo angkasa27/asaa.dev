@@ -5,7 +5,7 @@ import { HeroSection } from "./section/hero";
 import { ProjectSection } from "./section/project";
 import { StackSection } from "./section/stack";
 
-export const MainContainers = () => {
+export const MainContainer = () => {
   return (
     <main className="space-y-24">
       <div className="space-y-12 sm:pt-12">
