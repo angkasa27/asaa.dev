@@ -1,24 +1,6 @@
 import Image from "next/image";
-import { ReactNode } from "react";
-import { ClassValue } from "clsx";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { HeroChips } from "./hero-chips";
 
-interface ResponseApi {
-  year: number;
-  month: number;
-  day: number;
-  hour: number;
-  minute: number;
-  seconds: number;
-  milliSeconds: number;
-  dateTime: string;
-  date: string;
-  time: string;
-  timeZone: string;
-  dayOfWeek: string;
-  dstActive: boolean;
-}
 // TODO: Add link to resume
 // TODO: Add special chip to resume to indicate it's a link
 // TODO: Add animation to #OpenToWork
@@ -27,11 +9,6 @@ interface ResponseApi {
 // TODO: Onclick location to open google maps
 
 export const HeroSection = async () => {
-  const res = await fetch(
-    "https://timeapi.io/api/time/current/zone?timeZone=Asia%2FJakarta"
-  );
-  const data: ResponseApi = await res.json();
-
   return (
     <section
       id="hero"
@@ -44,17 +21,7 @@ export const HeroSection = async () => {
         <h4 className="text-center sm:text-left">
           Software Engineer | Still Fixing some bugs... 👨‍💻
         </h4>
-        <div className="flex gap-2 flex-wrap justify-center">
-          <Chips>🇮🇩 Jakarta, Indonesia</Chips>
-          <Chips>⏰︎ {data.time} WIB</Chips>
-          <Link
-            href="https://drive.google.com/file/d/1Ak0a0UTBV-KZriZrge81jfZzq8q1Vnle/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Chips className="cursor-pointer">✨ My Resume</Chips>
-          </Link>
-        </div>
+        <HeroChips />
       </div>
       <Image
         src="https://avatars.githubusercontent.com/u/41984181?v=4"
@@ -66,20 +33,3 @@ export const HeroSection = async () => {
     </section>
   );
 };
-
-const Chips = ({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: ClassValue;
-}) => (
-  <div
-    className={cn(
-      "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex",
-      className
-    )}
-  >
-    {children}
-  </div>
-);
