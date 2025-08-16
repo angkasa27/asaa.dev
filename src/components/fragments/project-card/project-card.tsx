@@ -6,6 +6,7 @@ import { LuExternalLink } from "react-icons/lu";
 import { SiGithub } from "react-icons/si";
 import { PreviewUrl } from "../preview-url";
 import { Lens } from "../lens";
+import { Project } from "@/constants/projects";
 
 // TODO: Add custom animation
 // TODO: Button to small
@@ -13,17 +14,13 @@ import { Lens } from "../lens";
 
 export const ProjectCard = ({
   title,
-  description,
+  // description,
   stack,
   projectUrl,
   githubUrl,
+  subtitle,
   className,
-}: {
-  title: string;
-  description: string;
-  stack: string[];
-  projectUrl: string;
-  githubUrl?: string;
+}: Project & {
   className?: ClassValue;
 }) => {
   return (
@@ -34,28 +31,33 @@ export const ProjectCard = ({
       )}
     >
       <div className="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white border-b">
-        <Lens
-          zoomFactor={2}
-          lensSize={150}
-          isStatic={false}
-          ariaLabel="Zoom Area"
-        >
-          <PreviewUrl
-            url={projectUrl}
-            width={640}
-            height={360}
-            className="object-cover w-full relative z-10"
-            loading="lazy"
-            delay={3000}
-          />
-        </Lens>
+        {projectUrl && (
+          <Lens
+            zoomFactor={2}
+            lensSize={150}
+            isStatic={false}
+            ariaLabel="Zoom Area"
+          >
+            <PreviewUrl
+              url={projectUrl}
+              width={640}
+              height={360}
+              className="object-cover w-full relative z-10"
+              loading="lazy"
+              delay={3000}
+            />
+          </Lens>
+        )}
         <SiGithub className="size-16 absolute" />
       </div>
       <div className="p-2 flex flex-col gap-2 flex-grow">
-        <p className="font-semibold tracking-tight text-base">{title}</p>
-        <p className="max-w-full text-pretty font-sans text-xs text-muted-foreground text-justify flex-grow">
+        <div>
+          <p className="font-semibold tracking-tight text-base">{title}</p>
+          <p className="font-sans text-xs">{subtitle}</p>
+        </div>
+        {/* <p className="max-w-full text-pretty font-sans text-xs text-muted-foreground text-justify flex-grow">
           {description}
-        </p>
+        </p> */}
         <div className="flex gap-1">
           {stack.map((s, i) => (
             <div

@@ -26,16 +26,11 @@ export const ProjectSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
-        {PROJECTS.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            stack={project.stack}
-            projectUrl={project.projectUrl}
-            githubUrl={project.githubUrl}
-          />
-        ))}
+        {PROJECTS.filter((project) => project.highlight).map(
+          (project, index) => (
+            <ProjectCard key={index} {...project} />
+          )
+        )}
       </div>
     </section>
   );
