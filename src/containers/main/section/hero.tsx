@@ -19,7 +19,7 @@ export const HeroSection = async () => {
           Hi! I&apos;m Dimas Angkasa
         </h1>
         <h4 className="text-center sm:text-left">
-          Software Engineer | Still Fixing some bugs... 👨‍💻
+          Software Engineer | Still fixing some bugs... 👨‍💻
         </h4>
         <HeroChips />
       </div>
