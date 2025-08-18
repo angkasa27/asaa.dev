@@ -1,44 +1,16 @@
 "use client";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useState } from "react";
 import { ClassValue } from "clsx";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { format } from "date-fns";
 
-interface ResponseApi {
-  year: number;
-  month: number;
-  day: number;
-  hour: number;
-  minute: number;
-  seconds: number;
-  milliSeconds: number;
-  dateTime: string;
-  date: string;
-  time: string;
-  timeZone: string;
-  dayOfWeek: string;
-  dstActive: boolean;
-}
 // TODO: Add animation to #OpenToWork
 // TODO: Add in animation to each component or even each word
 // TODO: Change clock to email
 
 export const HeroChips = () => {
-  const [time, setTime] = useState("");
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchTime = async () => {
-      setLoading(true);
-      const res = await fetch(
-        "https://timeapi.io/api/time/current/zone?timeZone=Asia%2FJakarta"
-      );
-      const data: ResponseApi = await res.json();
-      setTime(data.time);
-      setLoading(false);
-    };
-    fetchTime();
-  }, []);
+  const [time] = useState(format(new Date(), "HH:mm"));
 
   return (
     <div className="flex gap-2 flex-wrap justify-center">
@@ -49,7 +21,7 @@ export const HeroChips = () => {
       >
         <Chips>🇮🇩 Jakarta, Indonesia</Chips>
       </Link>
-      <Chips>⏰︎ {loading ? "Loading..." : time + " WIB"}</Chips>
+      <Chips>⏰︎ {time + " WIB"}</Chips>
       <Link href="https://drive.google.com/file/d/1Ak0a0UTBV-KZriZrge81jfZzq8q1Vnle/view?usp=sharing">
         <Chips className="cursor-pointer">✨ My Resume</Chips>
       </Link>
