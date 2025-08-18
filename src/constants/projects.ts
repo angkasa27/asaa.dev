@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
     description:
       "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
     stack: ["NextJS", "Tailwind CSS", "Motion"],
-    projectUrl: "https://mokletdev.vercel.app/",
+    projectUrl: "https://dev.moklet.org/",
     githubUrl: "https://github.com/mokletdev/mokletdev",
     subtitle: "Community Showcase",
     enabledPreview: true,
