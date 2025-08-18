@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://asaa.dev"),
   title: "Dimas Angkasa",
   description:
-    "Software Engineer who loves turning ideas into clean, functional, and visually stunning web experiences.",
+    "Software Engineer who delivers enterprise systems end-to-end and a front-end creative at heart.",
   openGraph: {
     title: "Dimas Angkasa",
     description:
-      "Software Engineer who loves turning ideas into clean, functional, and visually stunning web experiences.",
+      "Software Engineer who delivers enterprise systems end-to-end and a front-end creative at heart.",
     url: "https://asaa.dev",
     siteName: "Dimas Angkasa",
     locale: "en_US",
