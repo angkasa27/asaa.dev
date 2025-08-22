@@ -11,6 +11,17 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "MokletDev",
+    description:
+      "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
+    stack: ["NextJS", "Tailwind CSS", "Motion"],
+    projectUrl: "https://dev.moklet.org/",
+    githubUrl: "https://github.com/mokletdev/mokletdev",
+    subtitle: "Community Showcase",
+    enabledPreview: true,
+    highlight: true,
+  },
+  {
     title: "timotiusmuliawan.com",
     description:
       "Quis occaecat velit culpa pariatur minim culpa est nisi. Laborum do dolor eiusmod in mollit non veniam occaecat ex Lorem nisi. Adipisicing sit adipisicing cupidatat dolor eiusmod enim. Adipisicing commodo voluptate culpa non eu dolor minim.",
@@ -60,17 +71,6 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://www.neucentrix.co.id/en/",
     enabledPreview: true,
     highlight: false,
-  },
-  {
-    title: "MokletDev",
-    description:
-      "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
-    stack: ["NextJS", "Tailwind CSS", "Motion"],
-    projectUrl: "https://dev.moklet.org/",
-    githubUrl: "https://github.com/mokletdev/mokletdev",
-    subtitle: "Community Showcase",
-    enabledPreview: true,
-    highlight: true,
   },
   {
     title: "SuratBahagia",
