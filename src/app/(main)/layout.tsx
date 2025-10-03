@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { Providers } from "@/providers";
-import { Analytics } from "@vercel/analytics/next";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+import { Footer } from "@/components/fragments/footer";
+import { Navigation } from "@/components/fragments/navigation/navigation";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://asaa.dev"),
@@ -34,13 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`min-h-dvh bg-background font-sans antialiased max-w-2xl mx-auto pb-12 pt-24 px-6 transition-colors duration-200 ${inter.variable}`}
-      >
-        <Providers>{children}</Providers>
-        <Analytics />
-      </body>
-    </html>
+    <Navigation>
+      {children}
+      <Footer />
+    </Navigation>
   );
 }
