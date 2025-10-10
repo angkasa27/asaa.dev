@@ -11,7 +11,7 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    title: "MokletDev",
+    title: "dev.moklet.org",
     description:
       "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
     stack: ["NextJS", "Tailwind CSS", "Motion"],
@@ -38,6 +38,17 @@ export const PROJECTS: Project[] = [
     stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
     subtitle: "Company Landing Page",
     projectUrl: "https://www.dwipatelco.co.id/",
+    enabledPreview: true,
+    highlight: true,
+  },
+  {
+    title: "MeteoID",
+    description:
+      "Get accurate, real-time weather forecasts for all Indonesian regions. Powered by official BMKG meteorological data covering 91,000+ locations across Indonesia",
+    stack: ["NextJS", "Tailwind CSS"],
+    projectUrl: "https://meteoid.vercel.app/",
+    githubUrl: "https://github.com/angkasa27/meteoid",
+    subtitle: "Weather Forecast",
     enabledPreview: true,
     highlight: true,
   },
@@ -80,7 +91,7 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://suratbahagia.asaa.dev/",
     subtitle: "Online Invitation Platform",
     enabledPreview: true,
-    highlight: true,
+    highlight: false,
   },
   {
     title: "Eid Mubarak!",
@@ -112,8 +123,7 @@ export const PROJECTS: Project[] = [
       "Create a web-based platform for sending personalized Eid greetings with a lot of templates and customization options available",
     stack: ["HTML", "CSS", "JavaScript"],
     projectUrl: "https://socied.web.app/",
-    githubUrl:
-      "https://github.com/angkasa27/PD_hiedescom_final",
+    githubUrl: "https://github.com/angkasa27/PD_hiedescom_final",
     subtitle: "Social Media Template",
     enabledPreview: true,
     highlight: false,
@@ -124,8 +134,7 @@ export const PROJECTS: Project[] = [
       "Create a web-based platform for sending personalized Eid greetings with a lot of templates and customization options available",
     stack: ["HTML", "CSS", "JavaScript"],
     projectUrl: "https://traveline.web.app/",
-    githubUrl:
-      "https://github.com/angkasa27/PD-hiedescom2k20",
+    githubUrl: "https://github.com/angkasa27/PD-hiedescom2k20",
     subtitle: "Landing Page Template",
     enabledPreview: true,
     highlight: false,
