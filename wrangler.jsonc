@@ -33,5 +33,15 @@
     // Enable image optimization
     // see https://opennext.js.org/cloudflare/howtos/image
     "binding": "IMAGES"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "asaa.dev",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.asaa.dev",
+      "custom_domain": true
+    }
+  ]
 }
