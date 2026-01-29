@@ -21,6 +21,7 @@ import {
   // SiPython,
   SiRadixui,
   SiReact,
+  SiRedis,
   SiShadcnui,
   SiTailwindcss,
   // SiTypescript,
@@ -87,6 +88,10 @@ const BACKEND_STACK = [
   {
     icon: SiMongodb,
     name: "MongoDB",
+  },
+  {
+    icon: SiRedis,
+    name: "Redis",
   },
 ];
 
