@@ -14,7 +14,7 @@ export const PROJECTS: Project[] = [
     title: "fighterden.id",
     description:
       "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
-    stack: ["NextJS", "Tailwind CSS", "Motion"],
+    stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
     projectUrl: "https://fighterden.id/",
     // githubUrl: "https://github.com/mokletdev/mokletdev",
     subtitle: "Gym Landing Page",
@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     title: "dev.moklet.org",
     description:
       "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
-    stack: ["NextJS", "Tailwind CSS", "Motion"],
+    stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
     projectUrl: "https://dev.moklet.org/",
     githubUrl: "https://github.com/mokletdev/mokletdev",
     subtitle: "Community Showcase",
@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
     title: "MeteoID",
     description:
       "Get accurate, real-time weather forecasts for all Indonesian regions. Powered by official BMKG meteorological data covering 91,000+ locations across Indonesia",
-    stack: ["NextJS", "Tailwind CSS"],
+    stack: ["NextJS", "Tailwind CSS", "TypeScript"],
     projectUrl: "https://meteoid.vercel.app/",
     githubUrl: "https://github.com/angkasa27/meteoid",
     subtitle: "Weather Forecast",
