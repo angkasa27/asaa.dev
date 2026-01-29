@@ -61,7 +61,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/angkasa27/meteoid",
     subtitle: "Weather Forecast",
     enabledPreview: true,
-    highlight: true,
+    highlight: false,
   },
   {
     title: "JSON Schema Editor",
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
       "Reprehenderit ullamco esse amet. Tempor culpa eiusmod ex do id laboris velit cupidatat proident sint cupidatat voluptate est elit. Eiusmod eiusmod officia non sint eiusmod. Magna deserunt reprehenderit consectetur nisi cupidatat amet nisi ut ex qui proident consectetur.",
     stack: ["NextJS", "Typescript", "Tailwind CSS", "i18next"],
     subtitle: "Company Landing Page",
-    projectUrl: "https://www.neucentrix.co.id/en/",
+    projectUrl: "http://www.neucentrix.co.id/en/",
     enabledPreview: true,
     highlight: false,
   },
