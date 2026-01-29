@@ -11,6 +11,17 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "fighterden.id",
+    description:
+      "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
+    stack: ["NextJS", "Tailwind CSS", "Motion"],
+    projectUrl: "https://fighterden.id/",
+    // githubUrl: "https://github.com/mokletdev/mokletdev",
+    subtitle: "Gym Landing Page",
+    enabledPreview: true,
+    highlight: true,
+  },
+  {
     title: "dev.moklet.org",
     description:
       "Create a website showcasing GitHub repository projects for the Moklet community, a group consisting of students, teachers, and alumni of SMK Telkom Malang.",
