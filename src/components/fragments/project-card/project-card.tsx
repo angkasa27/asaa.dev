@@ -5,7 +5,6 @@ import Link from "next/link";
 import { LuExternalLink } from "react-icons/lu";
 import { SiGithub } from "react-icons/si";
 import { PreviewUrl } from "../preview-url";
-import { Lens } from "../lens";
 import { Project } from "@/constants/projects";
 
 // TODO: Add custom animation
@@ -30,22 +29,15 @@ export const ProjectCard = ({
         className,
       )}
     >
-      <div className="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white border-b">
+      <div className="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white border-b relative overflow-hidden">
         {projectUrl && (
-          <Lens
-            zoomFactor={2}
-            lensSize={150}
-            isStatic={false}
-            ariaLabel="Zoom Area"
-          >
-            <PreviewUrl
-              url={projectUrl}
-              width={640}
-              height={360}
-              className="object-cover w-full relative z-10"
-              delay={3000}
-            />
-          </Lens>
+          <PreviewUrl
+            url={projectUrl}
+            width={640}
+            height={360}
+            className="object-cover w-full relative z-10"
+            delay={3000}
+          />
         )}
         <SiGithub className="size-16 absolute" />
       </div>

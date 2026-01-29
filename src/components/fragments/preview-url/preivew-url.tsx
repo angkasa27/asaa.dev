@@ -64,8 +64,9 @@ export const PreviewUrl = ({
   return (
     <Image
       src={currentSrc}
-      width={width}
-      height={height}
+      // width={width}
+      // height={height}
+      fill
       className={cn(className)}
       alt={alt}
       onError={() => {
