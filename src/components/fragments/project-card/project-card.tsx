@@ -27,7 +27,7 @@ export const ProjectCard = ({
     <div
       className={cn(
         "rounded-lg border transition-transform duration-200 overflow-hidden flex flex-col",
-        className
+        className,
       )}
     >
       <div className="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white border-b">
@@ -43,7 +43,6 @@ export const ProjectCard = ({
               width={640}
               height={360}
               className="object-cover w-full relative z-10"
-              loading="lazy"
               delay={3000}
             />
           </Lens>
@@ -97,7 +96,7 @@ const ButtonRedirect = ({
   <Link
     className={cn(
       "items-center rounded border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-1 px-2 py-1 text-[10px]",
-      className
+      className,
     )}
     href={href}
     target="_blank"
