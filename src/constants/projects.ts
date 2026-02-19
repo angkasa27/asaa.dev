@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
       "Quis occaecat velit culpa pariatur minim culpa est nisi. Laborum do dolor eiusmod in mollit non veniam occaecat ex Lorem nisi. Adipisicing sit adipisicing cupidatat dolor eiusmod enim. Adipisicing commodo voluptate culpa non eu dolor minim.",
     stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
     subtitle: "Company Landing Page",
-    projectUrl: "https://www.dwipatelco.co.id/",
+    projectUrl: "https://dwipatelco.co.id/",
     enabledPreview: true,
     highlight: true,
   },
