@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import { Moon, Sun } from "lucide-svelte";
-  import ButtonIcon from "./ui/ButtonIcon.svelte";
+	import { onMount } from "svelte";
+	import Icon from "@iconify/svelte";
+	import ButtonIcon from "./ui/ButtonIcon.svelte";
 
   type ThemeMode = "dark" | "light";
 
@@ -39,12 +39,12 @@
   onclick={toggleTheme}
   class="relative *:absolute *:top-1/2 *:transform *:-translate-y-1/2 *:transition-all *:duration-500 *:ease-out"
 >
-  <Moon
-    size={20}
-    class="-rotate-180 scale-50 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100"
-  />
-  <Sun
-    size={20}
-    class="rotate-0 scale-100 opacity-100 dark:rotate-180 dark:scale-50 dark:opacity-0"
-  />
+	<Icon
+		icon="lucide:moon"
+		class="-rotate-180 scale-50 opacity-0 dark:rotate-0 dark:scale-100 dark:opacity-100"
+	/>
+	<Icon
+		icon="lucide:sun"
+		class="rotate-0 scale-100 opacity-100 dark:rotate-180 dark:scale-50 dark:opacity-0"
+	/>
 </ButtonIcon>

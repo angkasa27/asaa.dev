@@ -1,7 +1,7 @@
 <script lang="ts">
-  import ButtonIcon from "../ui/ButtonIcon.svelte";
-  import ThemeToggle from "../ThemeToggle.svelte";
-  import { Home } from "lucide-svelte";
+	import ButtonIcon from "../ui/ButtonIcon.svelte";
+	import ThemeToggle from "../ThemeToggle.svelte";
+	import Icon from "@iconify/svelte";
 
   let { class: className = "" } = $props();
 </script>
@@ -12,11 +12,11 @@
     className,
   ]}
 >
-  <ButtonIcon asChild class="flex items-center justify-center">
-    <a href="/" aria-label="Home">
-      <Home size={20} />
-    </a>
-  </ButtonIcon>
+	<ButtonIcon asChild class="flex items-center justify-center">
+		<a href="/" aria-label="Home">
+			<Icon icon="lucide:home" />
+		</a>
+	</ButtonIcon>
   <div class="flex items-center gap-4">
     <a href="#about">About</a>
     <a href="/projects">Projects</a>

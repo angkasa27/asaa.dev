@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Github, ExternalLink } from "lucide-svelte";
+	import Icon from "@iconify/svelte";
   import { cn } from "@/lib/utils";
   import type { ClassValue } from "clsx";
   import type { Project } from "@/constants/projects";
@@ -31,7 +31,7 @@
         delay={3000}
       />
     {/if}
-    <Github class="size-16 absolute" />
+  <Icon icon="simple-icons:github" class="size-16 absolute" />
   </div>
   <div class="p-2 flex flex-col gap-2 flex-grow">
     <div>
@@ -48,12 +48,12 @@
       {/each}
     </div>
     <div class="flex gap-2">
-      {#if githubUrl}
-        {@render buttonRedirect(githubUrl, "github", "Source")}
-      {/if}
-      {#if projectUrl}
-        {@render buttonRedirect(projectUrl, "external", "Live")}
-      {/if}
+			{#if githubUrl}
+				{@render buttonRedirect(githubUrl, "simple-icons:github", "Source")}
+			{/if}
+			{#if projectUrl}
+				{@render buttonRedirect(projectUrl, "lucide:external-link", "Live")}
+			{/if}
     </div>
   </div>
 </div>
@@ -65,13 +65,9 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-    <span class="btn-icon" aria-hidden="true">
-      {#if icon === "github"}
-        <Github />
-      {:else}
-        <ExternalLink />
-      {/if}
-    </span>
+		<span class="btn-icon" aria-hidden="true">
+			<Icon icon={icon} color="currentColor" />
+		</span>
     {label}
   </a>
 {/snippet}
