@@ -65,12 +65,12 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-		<span
+		<!-- <span
 			class="btn-icon inline-flex items-center justify-center size-3.5 flex-none"
 			aria-hidden="true"
 		>
 			<Icon {icon} color="currentColor" class="block size-full" />
-		</span>
+		</span> -->
 		{label}
 	</a>
 {/snippet}
