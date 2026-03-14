@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/navigation/Navigation.astro";
+import Hero from "../components/sections/Hero.astro";
+import Bio from "../components/sections/Bio.astro";
+import Stack from "../components/sections/Stack.astro";
+import Project from "../components/sections/Project.astro";
+import Contact from "../components/sections/Contact.astro";
+import Footer from "../components/Footer.svelte";
+---
+
+<BaseLayout>
+  <Navigation>
+    <main class="flex flex-col gap-16">
+      <Hero />
+      <Bio />
+      <Stack />
+      <Project />
+      <Contact />
+    </main>
+    <Footer client:load />
+  </Navigation>
+</BaseLayout>

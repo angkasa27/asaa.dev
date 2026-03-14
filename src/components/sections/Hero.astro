@@ -1,0 +1,25 @@
+---
+import HeroChips from "./HeroChips.svelte";
+---
+
+<section
+  id="hero"
+  class="flex flex-col-reverse sm:flex-row gap-2 justify-between items-center"
+>
+  <div class="flex flex-col gap-2 items-center sm:items-start">
+    <h1 class="inline-block xl:text-5xl/none text-center sm:text-left">
+      Hi! I'm Dimas Angkasa
+    </h1>
+    <h4 class="text-center sm:text-left">
+      Software Engineer | Still fixing some bugs... 👨‍💻
+    </h4>
+    <HeroChips client:load />
+  </div>
+  <img
+    src="https://avatars.githubusercontent.com/u/41984181?v=4"
+    alt="GitHub Avatar"
+    width="112"
+    height="112"
+    class="rounded-lg size-28 border"
+  />
+</section>

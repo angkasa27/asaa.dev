@@ -1,0 +1,29 @@
+---
+import ProjectCard from "./ProjectCard.svelte";
+import { PROJECTS } from "@/constants/projects";
+
+const highlightedProjects = PROJECTS.filter((project) => project.highlight);
+---
+
+<section id="project">
+  <div class="space-y-2">
+    <div
+      class="rounded-md bg-foreground text-background px-2 py-1 text-sm mx-auto w-fit"
+    >
+      Epic Stuff 🔥
+    </div>
+    <h2 class="text-center">Highlighted Projects</h2>
+    <p
+      class="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center"
+    >
+      Building seamless and visually engaging web experiences is my passion.
+      Explore more of my projects at{" "}
+      <a href="/projects" class="dark:text-white text-foreground underline">
+        projects page
+      </a>
+    </p>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
+    {highlightedProjects.map((project) => <ProjectCard {...project} />)}
+  </div>
+</section>

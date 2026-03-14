@@ -1,0 +1,90 @@
+---
+import FloatingNavigation from "./FloatingNavigation.svelte";
+import BaseNavigation from "./BaseNavigation.svelte";
+---
+
+<div class="navigation-shell">
+  <script is:inline>
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+    const applyMediaState = () => {
+      if (!document.body) return;
+      document.body.toggleAttribute("data-mobile", mediaQuery.matches);
+    };
+
+    applyMediaState();
+		mediaQuery.addEventListener("change", applyMediaState);
+  </script>
+
+  <div class="navigation-content">
+    <slot />
+  </div>
+
+  <div class="navigation-desktop" aria-hidden="true">
+    <FloatingNavigation client:load />
+  </div>
+
+  <div class="navigation-mobile" aria-hidden="true">
+    <BaseNavigation client:load />
+  </div>
+
+  <div class="navigation-bottom-blur" aria-hidden="true"></div>
+</div>
+
+<style>
+  .navigation-shell {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .navigation-content {
+    position: relative;
+    z-index: 0;
+  }
+
+  .navigation-desktop {
+    display: none;
+    position: relative;
+    z-index: 50;
+  }
+
+  .navigation-mobile {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    z-index: 50;
+  }
+
+  .navigation-bottom-blur {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(24px);
+    z-index: 40;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to top, black, transparent);
+  }
+
+  :global(.dark) .navigation-bottom-blur {
+    background: rgba(10, 10, 10, 0.6);
+  }
+
+  @media (min-width: 768px) {
+    .navigation-desktop {
+      display: block;
+    }
+
+    .navigation-mobile {
+      display: none;
+    }
+
+    .navigation-bottom-blur {
+      display: none;
+    }
+  }
+</style>

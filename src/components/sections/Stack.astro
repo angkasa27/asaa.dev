@@ -1,0 +1,41 @@
+---
+import InfiniteSlider from "./InfiniteSlider.svelte";
+import { STACK } from "../../constants/stack";
+import { STACK_ICON_MAP } from "../../constants/stack-icons";
+
+const stackGroups = STACK.map((group) =>
+  group.map((item) => ({
+    label: item.name,
+    icon: STACK_ICON_MAP[item.name],
+  })),
+);
+---
+
+<section id="stack">
+  <div class="relative max-sm:-mx-6">
+    {
+      stackGroups.map((group, index) => (
+        <div class="mb-4">
+          <InfiniteSlider
+            items={group}
+            label="Technology stack"
+            durationSeconds={20 + index * 2}
+            reverse={index % 2 === 1}
+            gapPx={16}
+            client:load
+          />
+        </div>
+      ))
+    }
+    <div
+      class="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"
+      aria-hidden="true"
+    >
+    </div>
+    <div
+      class="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"
+      aria-hidden="true"
+    >
+    </div>
+  </div>
+</section>

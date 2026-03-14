@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 // import { FaJava } from "react-icons/fa6";
 import {
   SiCloudflare,
@@ -94,83 +94,6 @@ const BACKEND_STACK = [
     name: "Redis",
   },
 ];
-
-// const LANGUAGE_STACK = [
-//   {
-//     icon: FaJava,
-//     name: "Java",
-//   },
-//   {
-//     icon: SiJavascript,
-//     name: "JavaScript",
-//   },
-//   {
-//     icon: SiPython,
-//     name: "Python",
-//   },
-//   {
-//     icon: SiTypescript,
-//     name: "TypeScript",
-//   },
-
-//   // Repeated
-
-//   {
-//     icon: FaJava,
-//     name: "Java",
-//   },
-//   {
-//     icon: SiJavascript,
-//     name: "JavaScript",
-//   },
-//   {
-//     icon: SiPython,
-//     name: "Python",
-//   },
-//   {
-//     icon: SiTypescript,
-//     name: "TypeScript",
-//   },
-// ];
-
-// const LIBRARY_STACK = [
-//   {
-//     icon: SiReact,
-//     name: "React",
-//   },
-//   {
-//     icon: SiNextdotjs,
-//     name: "Next.js",
-//   },
-//   {
-//     icon: SiTailwindcss,
-//     name: "Tailwind CSS",
-//   },
-//   {
-//     icon: SiShadcnui,
-//     name: "Shadcn UI",
-//   },
-//   {
-//     icon: SiMui,
-//     name: "Material UI",
-//   },
-//   {
-//     icon: SiRadixui,
-//     name: "Radix UI",
-//   },
-//   {
-//     icon: SiNestjs,
-//     name: "NestJS",
-//   },
-//   {
-//     icon: SiNodedotjs,
-//     name: "Node.js",
-//   },
-//   {
-//     icon: SiExpress,
-//     name: "Express",
-//   },
-// ];
 
 const APP_STACK = [
   {

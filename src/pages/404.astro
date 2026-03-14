@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="404 - Page Not Found" description="Page not found">
+  <main class="flex flex-col items-center justify-center gap-4 min-h-[50vh]">
+    <h1 class="text-center">404</h1>
+    <h2 class="text-center">Page Not Found</h2>
+    <p class="text-center text-muted-foreground max-w-md">
+      Sorry, the page you're looking for doesn't exist or has been moved.
+    </p>
+    <a
+      href="/"
+      class="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
+    >
+      Go Back Home
+    </a>
+  </main>
+</BaseLayout>
