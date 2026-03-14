@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
     title: "timotiusmuliawan.com",
     description:
       "Quis occaecat velit culpa pariatur minim culpa est nisi. Laborum do dolor eiusmod in mollit non veniam occaecat ex Lorem nisi. Adipisicing sit adipisicing cupidatat dolor eiusmod enim. Adipisicing commodo voluptate culpa non eu dolor minim.",
-    stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion", "GSAP"],
+    stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
     subtitle: "Interactive Portofolio",
     projectUrl: "https://www.timotiusmuliawan.com/",
     enabledPreview: true,

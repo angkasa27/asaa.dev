@@ -14,7 +14,7 @@
 >
 	<ButtonIcon asChild class="flex items-center justify-center">
 		<a href="/" aria-label="Home">
-			<Icon icon="lucide:home" />
+			<Icon icon="lucide:home" class="size-5" />
 		</a>
 	</ButtonIcon>
   <div class="flex items-center gap-4">

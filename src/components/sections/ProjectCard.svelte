@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from "@iconify/svelte";
+  import Icon from "@iconify/svelte";
   import { cn } from "@/lib/utils";
   import type { ClassValue } from "clsx";
   import type { Project } from "@/constants/projects";
@@ -31,9 +31,9 @@
         delay={3000}
       />
     {/if}
-  <Icon icon="simple-icons:github" class="size-16 absolute" />
+    <Icon icon="simple-icons:github" class="size-16 absolute" />
   </div>
-  <div class="p-2 flex flex-col gap-2 flex-grow">
+  <div class="p-2 flex flex-col gap-2 grow">
     <div>
       <p class="font-semibold tracking-tight text-base">{title}</p>
       <p class="font-sans text-xs">{subtitle}</p>
@@ -41,19 +41,19 @@
     <div class="flex gap-1">
       {#each stack as tech (tech)}
         <div
-          class="rounded border font-semibold border-transparent bg-secondary text-secondary-foreground px-1 py-0 text-[10px]"
+          class="rounded border font-semibold border-transparent bg-secondary text-secondary-foreground px-1 py-0 text-[10px] font-mono"
         >
           {tech}
         </div>
       {/each}
     </div>
     <div class="flex gap-2">
-			{#if githubUrl}
-				{@render buttonRedirect(githubUrl, "simple-icons:github", "Source")}
-			{/if}
-			{#if projectUrl}
-				{@render buttonRedirect(projectUrl, "lucide:external-link", "Live")}
-			{/if}
+      {#if githubUrl}
+        {@render buttonRedirect(githubUrl, "simple-icons:github", "Source")}
+      {/if}
+      {#if projectUrl}
+        {@render buttonRedirect(projectUrl, "lucide:external-link", "Live")}
+      {/if}
     </div>
   </div>
 </div>
@@ -65,9 +65,9 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-		<span class="btn-icon" aria-hidden="true">
-			<Icon icon={icon} color="currentColor" />
-		</span>
+    <span class="btn-icon" aria-hidden="true">
+      <Icon {icon} color="currentColor" />
+    </span>
     {label}
   </a>
 {/snippet}
