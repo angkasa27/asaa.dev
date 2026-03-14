@@ -43,11 +43,11 @@
         <span
           class="item inline-flex flex-none items-center gap-2 rounded-full border border-neutral-300 bg-neutral-50 px-5 py-2 text-[15px] shadow-sm dark:border-neutral-700 dark:bg-neutral-800"
         >
-          {#if item.icon}
-            <span class="icon" aria-hidden="true">
-              <Icon icon={item.icon} />
-            </span>
-          {/if}
+			{#if item.icon}
+				<span class="icon inline-flex items-center justify-center size-4 flex-none" aria-hidden="true">
+					<Icon icon={item.icon} />
+				</span>
+			{/if}
           <span class="item-label">{item.label}</span>
         </span>
       {/each}
@@ -89,23 +89,9 @@
     animation-play-state: paused;
   }
 
-  .icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1rem;
-    height: 1rem;
-    flex: 0 0 auto;
-  }
-
-  .icon :global(svg) {
-    width: 100%;
-    height: 100%;
-  }
-
-  .item-label {
-    line-height: 1;
-  }
+	.icon :global(svg) {
+		display: block;
+	}
 
   .empty {
     margin: 0;

@@ -29,22 +29,11 @@
 </script>
 
 <div class="fixed top-10 left-1/2 -translate-x-1/2 z-50">
-  <div class={"floating-nav " + (isVisible ? "" : "floating-nav--hidden")}>
+  <div
+    class={`transition-[opacity,transform] duration-200 ease-out ${
+      isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+    }`}
+  >
     <BaseNavigation />
   </div>
 </div>
-
-<style>
-  .floating-nav {
-    opacity: 1;
-    transform: translateY(0);
-    transition:
-      opacity 200ms ease,
-      transform 200ms ease;
-  }
-
-  .floating-nav--hidden {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-</style>

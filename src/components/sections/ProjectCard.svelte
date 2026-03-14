@@ -65,26 +65,12 @@
     target="_blank"
     rel="noopener noreferrer"
   >
-    <span class="btn-icon" aria-hidden="true">
-      <Icon {icon} color="currentColor" />
-    </span>
-    {label}
-  </a>
+		<span
+			class="btn-icon inline-flex items-center justify-center size-3.5 flex-none"
+			aria-hidden="true"
+		>
+			<Icon {icon} color="currentColor" class="block size-full" />
+		</span>
+		{label}
+	</a>
 {/snippet}
-
-<style>
-  .btn-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 0.875rem;
-    height: 0.875rem;
-    flex: 0 0 auto;
-  }
-
-  .btn-icon :global(svg) {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-</style>
