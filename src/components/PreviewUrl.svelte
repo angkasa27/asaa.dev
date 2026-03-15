@@ -33,6 +33,8 @@
       "viewport.width": width * scale,
       "viewport.height": height * scale,
       waitForTimeout: delay,
+      format: "webp",
+      quality: 70,
     });
     return `https://api.microlink.io/?${params}`;
   });

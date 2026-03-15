@@ -16,10 +16,12 @@ import HeroChips from "./HeroChips.svelte";
     <HeroChips client:load />
   </div>
   <img
-    src="https://avatars.githubusercontent.com/u/41984181?v=4"
+    src="/avatar.png"
     alt="GitHub Avatar"
     width="112"
     height="112"
     class="rounded-lg size-28 border"
+    loading="lazy"
+    decoding="async"
   />
 </section>
