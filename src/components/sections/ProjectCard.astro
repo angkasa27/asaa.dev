@@ -1,0 +1,80 @@
+---
+import { Image } from "astro:assets";
+import type { Project } from "@/constants/projects";
+
+const { project } = Astro.props as { project: Project };
+const { title, subtitle, stack, githubUrl, projectUrl, imageUrl } = project;
+
+const images = import.meta.glob("/src/assets/projects/*.{jpg,jpeg,png}", {
+  eager: true,
+  import: "default",
+});
+
+const assetPath = imageUrl ? `/src/assets${imageUrl}` : null;
+const image = assetPath && images[assetPath] ? images[assetPath] : null;
+---
+
+<div
+  class="rounded-lg border transition-transform duration-200 overflow-hidden flex flex-col"
+>
+  <div
+    class="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white border-b relative overflow-hidden"
+  >
+    {image ? (
+      <Image
+        src={image}
+        alt={`${title} preview`}
+        width={1200}
+        height={675}
+        format="webp"
+        placeholder="blur"
+        class="object-cover w-full relative z-10"
+      />
+    ) : (
+      <img
+        src="/logo.svg"
+        alt="Logo"
+        class="size-16 text-background"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
+  </div>
+  <div class="p-2 flex flex-col gap-2 grow">
+    <div>
+      <p class="font-semibold tracking-tight text-base">{title}</p>
+      <p class="font-sans text-xs">{subtitle}</p>
+    </div>
+    <div class="flex gap-1">
+      {stack.map((tech) => (
+        <div
+          class="rounded border font-semibold border-transparent bg-secondary text-secondary-foreground px-1 py-0 text-[10px] font-mono"
+        >
+          {tech}
+        </div>
+      ))}
+    </div>
+    <div class="flex gap-2">
+      {githubUrl && (
+        <a
+          class="items-center rounded border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-1 px-2 py-1 text-[10px]"
+          href={githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source
+        </a>
+      )}
+      {projectUrl && (
+        <a
+          class="items-center rounded border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-1 px-2 py-1 text-[10px]"
+          href={projectUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live
+        </a>
+      )}
+    </div>
+  </div>
+</div>

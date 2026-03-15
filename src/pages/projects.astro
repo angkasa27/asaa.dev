@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Navigation from "../components/navigation/Navigation.astro";
-import ProjectCard from "../components/sections/ProjectCard.svelte";
+import ProjectCard from "../components/sections/ProjectCard.astro";
 import { PROJECTS } from "@/constants/projects";
 ---
 
@@ -21,7 +21,9 @@ import { PROJECTS } from "@/constants/projects";
         </p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {PROJECTS.map((project) => <ProjectCard {...project} />)}
+        {PROJECTS.map((project) => (
+          <ProjectCard project={project} />
+        ))}
       </div>
     </main>
   </Navigation>

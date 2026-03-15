@@ -4,9 +4,9 @@ export interface Project {
   stack: string[];
   projectUrl?: string;
   githubUrl?: string;
-  enabledPreview: boolean;
   highlight: boolean;
   subtitle: string;
+  imageUrl?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -18,8 +18,8 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://fighterden.id/",
     // githubUrl: "https://github.com/mokletdev/mokletdev",
     subtitle: "Gym Landing Page",
-    enabledPreview: true,
     highlight: true,
+    imageUrl: "/projects/fighterden-id.jpg",
   },
   {
     title: "dev.moklet.org",
@@ -29,8 +29,8 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://dev.moklet.org/",
     githubUrl: "https://github.com/mokletdev/mokletdev",
     subtitle: "Community Showcase",
-    enabledPreview: true,
     highlight: true,
+    imageUrl: "/projects/dev-moklet-org.jpg",
   },
   {
     title: "timotiusmuliawan.com",
@@ -39,8 +39,8 @@ export const PROJECTS: Project[] = [
     stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
     subtitle: "Interactive Portofolio",
     projectUrl: "https://www.timotiusmuliawan.com/",
-    enabledPreview: true,
     highlight: true,
+    imageUrl: "/projects/timotiusmuliawan-com.jpg",
   },
   {
     title: "dwipatelco.co.id",
@@ -49,8 +49,8 @@ export const PROJECTS: Project[] = [
     stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
     subtitle: "Company Landing Page",
     projectUrl: "https://dwipatelco.co.id/",
-    enabledPreview: true,
     highlight: true,
+    imageUrl: "/projects/dwipatelco-co-id.jpg",
   },
   {
     title: "MeteoID",
@@ -60,8 +60,8 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://meteoid.vercel.app/",
     githubUrl: "https://github.com/angkasa27/meteoid",
     subtitle: "Weather Forecast",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/meteoid.jpg",
   },
   {
     title: "JSON Schema Editor",
@@ -71,8 +71,8 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://json-schema-editor.asaa.dev/",
     githubUrl: "https://github.com/angkasa27/json-schema-editor",
     subtitle: "Support Tools",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/json-schema-editor.jpg",
   },
   {
     title: "MyTEnS GoBeyond",
@@ -81,8 +81,8 @@ export const PROJECTS: Project[] = [
     stack: ["NextJS", "Typescript", "Tailwind CSS", "Material UI"],
     projectUrl: "https://mytens.co.id/",
     subtitle: "Executive Dashboard",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/mytens-gobeyond.jpg",
   },
   {
     title: "NeuCentrIX",
@@ -91,8 +91,8 @@ export const PROJECTS: Project[] = [
     stack: ["NextJS", "Typescript", "Tailwind CSS", "i18next"],
     subtitle: "Company Landing Page",
     projectUrl: "http://www.neucentrix.co.id/en/",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/neucentrix.jpg",
   },
   {
     title: "SuratBahagia",
@@ -101,8 +101,8 @@ export const PROJECTS: Project[] = [
     stack: ["NextJS", "Tailwind CSS", "Motion"],
     projectUrl: "https://suratbahagia.asaa.dev/",
     subtitle: "Online Invitation Platform",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/suratbahagia.jpg",
   },
   {
     title: "Eid Mubarak!",
@@ -113,8 +113,8 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/angkasa27/eid-mubarak-project",
     subtitle: "Online Greeting Platform",
 
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/eid-mubarak.jpg",
   },
   {
     title: "MyComplaint",
@@ -125,8 +125,8 @@ export const PROJECTS: Project[] = [
     githubUrl:
       "https://github.com/angkasa27/react-tailwind-mycomplaint-dashboard",
     subtitle: "Dashboard Website",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/mycomplaint.jpg",
   },
   {
     title: "Socied",
@@ -136,8 +136,8 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://socied.web.app/",
     githubUrl: "https://github.com/angkasa27/PD_hiedescom_final",
     subtitle: "Social Media Template",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/socied.jpg",
   },
   {
     title: "Traveline",
@@ -147,7 +147,7 @@ export const PROJECTS: Project[] = [
     projectUrl: "https://traveline.web.app/",
     githubUrl: "https://github.com/angkasa27/PD-hiedescom2k20",
     subtitle: "Landing Page Template",
-    enabledPreview: true,
     highlight: false,
+    imageUrl: "/projects/traveline.jpg",
   },
 ];

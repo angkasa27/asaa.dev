@@ -1,5 +1,5 @@
 ---
-import ProjectCard from "./ProjectCard.svelte";
+import ProjectCard from "./ProjectCard.astro";
 import { PROJECTS } from "@/constants/projects";
 
 const highlightedProjects = PROJECTS.filter((project) => project.highlight);
@@ -24,6 +24,8 @@ const highlightedProjects = PROJECTS.filter((project) => project.highlight);
     </p>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
-    {highlightedProjects.map((project) => <ProjectCard {...project} />)}
+    {highlightedProjects.map((project) => (
+      <ProjectCard project={project} />
+    ))}
   </div>
 </section>
