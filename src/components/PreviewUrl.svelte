@@ -65,5 +65,7 @@
   class={className}
   loading="lazy"
   onerror={handleError}
+  {width}
+  {height}
   {...rest}
 />
