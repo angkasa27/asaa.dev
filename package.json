@@ -1,7 +1,7 @@
 {
   "name": "asaa.dev",
   "type": "module",
-  "version": "v2.0.2",
+  "version": "v2.1.0",
   "engines": {
     "node": ">=22.12.0"
   },
