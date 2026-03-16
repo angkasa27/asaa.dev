@@ -41,13 +41,16 @@
     <div class="track" aria-hidden="true">
       {#each repeatedItems as item, index (`${item.label}-${index}`)}
         <span
-          class="item inline-flex flex-none items-center gap-2 rounded-full border border-neutral-300 bg-neutral-50 px-5 py-2 text-[15px] shadow-sm dark:border-neutral-700 dark:bg-neutral-800"
+          class="item inline-flex flex-none items-center gap-2 rounded-full border border-neutral-300 bg-neutral-50 px-5 py-2 text-[15px] shadow-sm dark:border-neutral-700 dark:bg-neutral-800 mb-px"
         >
-			{#if item.icon}
-				<span class="icon inline-flex items-center justify-center size-4 flex-none" aria-hidden="true">
-					<Icon icon={item.icon} />
-				</span>
-			{/if}
+          {#if item.icon}
+            <span
+              class="icon inline-flex items-center justify-center size-4 flex-none"
+              aria-hidden="true"
+            >
+              <Icon icon={item.icon} />
+            </span>
+          {/if}
           <span class="item-label">{item.label}</span>
         </span>
       {/each}
@@ -89,9 +92,9 @@
     animation-play-state: paused;
   }
 
-	.icon :global(svg) {
-		display: block;
-	}
+  .icon :global(svg) {
+    display: block;
+  }
 
   .empty {
     margin: 0;
