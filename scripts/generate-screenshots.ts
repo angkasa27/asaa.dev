@@ -16,7 +16,6 @@ const main = async () => {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-
   const browser = await chromium.launch();
 
   for (const project of PROJECTS) {
@@ -26,7 +25,7 @@ const main = async () => {
     const filePath = path.join(outputDir, `${slug}.jpg`);
 
     const page = await browser.newPage({
-      viewport: { width: 1200, height: 675 },
+      viewport: { width: 1366, height: 768 },
       deviceScaleFactor: 1,
     });
 

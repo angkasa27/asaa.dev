@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/mokletdev/mokletdev",
     subtitle: "Community Showcase",
     highlight: true,
-    imageUrl: "/projects/dev-moklet-org.jpg",
+    imageUrl: "/projects/dev-moklet-org.png",
   },
   {
     title: "timotiusmuliawan.com",
