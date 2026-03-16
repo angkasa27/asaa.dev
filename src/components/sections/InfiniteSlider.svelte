@@ -41,7 +41,7 @@
     <div class="track" aria-hidden="true">
       {#each repeatedItems as item, index (`${item.label}-${index}`)}
         <span
-          class="item inline-flex flex-none items-center gap-2 rounded-full border border-neutral-300 bg-neutral-50 px-5 py-2 text-[15px] shadow-sm dark:border-neutral-700 dark:bg-neutral-800 mb-px"
+          class="item inline-flex flex-none items-center gap-2 rounded-full border border-neutral-300 bg-neutral-50 px-5 py-2 text-[15px] shadow-sm dark:border-neutral-700 dark:bg-neutral-800"
         >
           {#if item.icon}
             <span
@@ -69,7 +69,7 @@
   .slider {
     --gap: 2.5rem;
     --slider-duration: 24s;
-    overflow: hidden;
+    /* overflow-x: hidden; */
     position: relative;
     width: 100%;
   }
@@ -109,7 +109,7 @@
     height: 1px;
     padding: 0;
     margin: -1px;
-    overflow: hidden;
+    /* overflow: hidden; */
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;

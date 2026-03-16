@@ -12,7 +12,7 @@ const stackGroups = STACK.map((group) =>
 ---
 
 <section id="stack">
-  <div class="relative max-sm:-mx-6">
+  <div class="relative max-sm:-mx-6 overflow-hidden">
     <h2 class="sr-only">Stack</h2>
     {
       stackGroups.map((group, index) => (
@@ -29,12 +29,12 @@ const stackGroups = STACK.map((group) =>
       ))
     }
     <div
-      class="pointer-events-none absolute inset-y-0 -left-px w-1/4 bg-linear-to-r from-background from-1px"
+      class="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r from-background"
       aria-hidden="true"
     >
     </div>
     <div
-      class="pointer-events-none absolute inset-y-0 -right-px w-1/4 bg-linear-to-l from-background from-1px"
+      class="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l from-background"
       aria-hidden="true"
     >
     </div>
