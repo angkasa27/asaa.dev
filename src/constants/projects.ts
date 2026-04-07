@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
     title: "dwipatelco.co.id",
     description:
       "Quis occaecat velit culpa pariatur minim culpa est nisi. Laborum do dolor eiusmod in mollit non veniam occaecat ex Lorem nisi. Adipisicing sit adipisicing cupidatat dolor eiusmod enim. Adipisicing commodo voluptate culpa non eu dolor minim.",
-    stack: ["NextJS", "Typescript", "Tailwind CSS", "Motion"],
+    stack: ["Svelte", "Typescript", "Tailwind CSS", "GSAP"],
     subtitle: "Company Landing Page",
     projectUrl: "https://dwipatelco.co.id/",
     highlight: true,
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
     title: "JSON Schema Editor",
     description:
       "A visual JSON Schema editor built with React, TailwindCSS, and React Hook Form. Easily view and edit JSON schema structures without manually modifying JSON code.",
-    stack: ["NextJS", "Typescript", "Tailwind CSS"],
+    stack: ["NextJS", "Typescript", "Tailwind CSS", "Json Schema"],
     projectUrl: "https://json-schema-editor.asaa.dev/",
     githubUrl: "https://github.com/angkasa27/json-schema-editor",
     subtitle: "Support Tools",

@@ -2,6 +2,7 @@ import type { IconType } from "react-icons";
 // import { FaJava } from "react-icons/fa6";
 import {
   SiCloudflare,
+  SiDocker,
   SiExpress,
   SiFigma,
   SiGithub,
@@ -23,6 +24,7 @@ import {
   SiReact,
   SiRedis,
   SiShadcnui,
+  SiSvelte,
   SiTailwindcss,
   // SiTypescript,
 } from "react-icons/si";
@@ -41,6 +43,10 @@ const FRONTEND_STACK = [
   {
     icon: SiNextdotjs,
     name: "Next.js",
+  },
+  {
+    icon: SiSvelte,
+    name: "Svelte",
   },
   {
     icon: SiTailwindcss,
@@ -127,6 +133,10 @@ const APP_STACK = [
   {
     icon: SiCloudflare,
     name: "Cloudflare",
+  },
+  {
+    icon: SiDocker,
+    name: "Docker",
   },
 ];
 
