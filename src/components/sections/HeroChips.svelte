@@ -38,7 +38,7 @@
     ⏰︎ {time} WIB
   </div>
   <a
-    href="https://drive.google.com/file/d/1Ak0a0UTBV-KZriZrge81jfZzq8q1Vnle/view?usp=sharing"
+    href="https://drive.google.com/file/d/1wy8W_EPYwHdqZP-8PksRZyNrXD0SJ53m"
     target="_blank"
     rel="noopener noreferrer"
   >
