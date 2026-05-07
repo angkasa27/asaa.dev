@@ -1,19 +1,6 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import { format } from "date-fns";
   import { cn } from "@/lib/utils";
-
-  let time = $state("00:00");
-
-  onMount(() => {
-    time = format(new Date(), "HH:mm");
-
-    const interval = setInterval(() => {
-      time = format(new Date(), "HH:mm");
-    }, 60000);
-
-    return () => clearInterval(interval);
-  });
+  import Icon from "@iconify/svelte";
 </script>
 
 <div class="flex gap-2 flex-wrap justify-center">
@@ -30,13 +17,20 @@
       🇮🇩 Jakarta, Indonesia
     </div>
   </a>
-  <div
-    class={cn(
-      "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex",
-    )}
+  <a
+    href="https://github.com/angkasa27"
+    target="_blank"
+    rel="noopener noreferrer"
   >
-    ⏰︎ {time} WIB
-  </div>
+    <div
+      class={cn(
+        "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex cursor-pointer gap-1",
+      )}
+    >
+      <Icon icon="logos:github-icon" width={14} height={14} />
+      angkasa27
+    </div>
+  </a>
   <a
     href="https://drive.google.com/file/d/1wy8W_EPYwHdqZP-8PksRZyNrXD0SJ53m"
     target="_blank"
