@@ -12,6 +12,17 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    title: "Resume Editor",
+    description:
+      "No-login resume editor for building structured CVs with swappable layouts and exportable portable data.",
+    contribution:
+      "Built an end-to-end resume authoring tool with live canvas editing, layout switching, and PDF/JSON export so users can customize presentation without losing structured content.",
+    tags: ["Resume Builder", "Document Editor", "Productivity"],
+    projectUrl: "https://resume-editor.asaa.dev/",
+    githubUrl: "https://github.com/angkasa27/resume-editor",
+    highlight: false,
+  },
+  {
     title: "Email Operations Dashboard",
     description:
       "Internal dashboard for monitoring inbound and outbound company email activity across connected mailboxes.",
