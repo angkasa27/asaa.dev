@@ -11,7 +11,7 @@
   >
     <div
       class={cn(
-        "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex",
+        "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold hover-pop transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex",
       )}
     >
       🇮🇩 Jakarta, Indonesia
@@ -24,7 +24,7 @@
   >
     <div
       class={cn(
-        "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex cursor-pointer gap-1",
+        "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold hover-pop transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex cursor-pointer gap-1",
       )}
     >
       <Icon icon="logos:github-icon" width={14} height={14} />
@@ -38,7 +38,7 @@
   >
     <div
       class={cn(
-        "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex cursor-pointer",
+        "items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold hover-pop transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 flex cursor-pointer",
       )}
     >
       ✨ My Resume

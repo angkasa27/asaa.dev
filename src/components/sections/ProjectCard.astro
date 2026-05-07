@@ -43,7 +43,7 @@ const image = resolvedAssetPath ? images[resolvedAssetPath] : null;
 ---
 
 <div
-  class="rounded-lg border transition-transform duration-200 overflow-hidden flex flex-col"
+  class="group rounded-lg border hover-lift overflow-hidden flex flex-col h-full hover:border-foreground/30"
 >
   <div
     class="flex justify-center items-center w-full aspect-video bg-neutral-900 text-white border-b relative overflow-hidden"
@@ -56,13 +56,13 @@ const image = resolvedAssetPath ? images[resolvedAssetPath] : null;
           width={1200}
           height={675}
           format="webp"
-          class="object-cover w-full relative z-10"
+          class="object-cover w-full relative z-10 transition-transform duration-500 ease-out group-hover:scale-[1.04]"
         />
       ) : (
         <img
           src="/logo.svg"
           alt="Logo"
-          class="size-16 text-background"
+          class="size-16 text-background transition-transform duration-500 ease-out group-hover:scale-110 group-hover:rotate-3"
           loading="lazy"
           decoding="async"
         />

@@ -101,5 +101,32 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     class="min-h-dvh bg-background font-sans antialiased max-w-2xl mx-auto pb-12 pt-24 md:pt-34 px-6 transition-colors duration-200"
   >
     <slot />
+
+    <script>
+      const reveal = () => {
+        const els = document.querySelectorAll<HTMLElement>("[data-reveal]");
+        if (!("IntersectionObserver" in window) || els.length === 0) {
+          els.forEach((el) => el.classList.add("is-visible"));
+          return;
+        }
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const el = entry.target as HTMLElement;
+                const delay = el.dataset.revealDelay;
+                if (delay) el.style.transitionDelay = `${delay}ms`;
+                el.classList.add("is-visible");
+                io.unobserve(el);
+              }
+            });
+          },
+          { rootMargin: "0px 0px -10% 0px", threshold: 0.08 },
+        );
+        els.forEach((el) => io.observe(el));
+      };
+      reveal();
+      document.addEventListener("astro:page-load", reveal);
+    </script>
   </body>
 </html>

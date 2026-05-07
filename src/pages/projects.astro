@@ -12,17 +12,20 @@ import { PROJECTS } from "@/constants/projects";
   <Navigation>
     <main class="space-y-12 min-h-[calc(100dvh-var(--spacing)*66)]">
       <div class="sm:pt-12">
-        <h1 class="text-center">Stuff i'm working on</h1>
+        <h1 class="text-center animate-on-load">Stuff i'm working on</h1>
         <p
-          class="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center"
+          class="text-pretty font-sans text-sm sm:text-base leading-6 text-muted-foreground text-center animate-on-load"
+          style="animation-delay: 80ms"
         >
           I love building seamless and visually engaging web experiences. Here
           are some of my projects that showcase my skills and creativity.
         </p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {PROJECTS.map((project) => (
-          <ProjectCard project={project} />
+        {PROJECTS.map((project, i) => (
+          <div data-reveal data-reveal-delay={Math.min(i, 8) * 60}>
+            <ProjectCard project={project} />
+          </div>
         ))}
       </div>
     </main>

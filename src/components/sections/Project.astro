@@ -6,7 +6,7 @@ const highlightedProjects = PROJECTS.filter((project) => project.highlight);
 ---
 
 <section id="project">
-  <div class="space-y-2">
+  <div class="space-y-2" data-reveal>
     <div
       class="rounded-md bg-foreground text-background px-2 py-1 text-sm mx-auto w-fit"
     >
@@ -24,8 +24,10 @@ const highlightedProjects = PROJECTS.filter((project) => project.highlight);
     </p>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
-    {highlightedProjects.map((project) => (
-      <ProjectCard project={project} />
+    {highlightedProjects.map((project, i) => (
+      <div data-reveal data-reveal-delay={i * 80}>
+        <ProjectCard project={project} />
+      </div>
     ))}
   </div>
 </section>

@@ -233,3 +233,99 @@ h1 {
 h2 {
   @apply text-2xl font-semibold tracking-tight sm:text-3xl;
 }
+
+/* motion */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.animate-on-load {
+  animation: fade-in-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.hover-lift {
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.25s ease;
+  will-change: transform;
+}
+
+.hover-lift:hover {
+  transform: translate3d(0, -3px, 0);
+  box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.25);
+}
+
+.hover-pop {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hover-pop:hover {
+  transform: translate3d(0, -2px, 0) scale(1.03);
+}
+
+.avatar-float {
+  animation: float 5s ease-in-out infinite;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.avatar-float:hover {
+  animation-play-state: paused;
+  transform: scale(1.05) rotate(-2deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-load,
+  .avatar-float {
+    animation: none !important;
+  }
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .hover-lift:hover,
+  .hover-pop:hover {
+    transform: none !important;
+  }
+}
