@@ -1,21 +1,15 @@
 ---
 import InfiniteSlider from "./InfiniteSlider.svelte";
 import { STACK } from "../../constants/stack";
-import { STACK_ICON_MAP } from "../../constants/stack-icons";
 
-const stackGroups = STACK.map((group) =>
-  group.map((item) => ({
-    label: item.name,
-    icon: STACK_ICON_MAP[item.name],
-  })),
-);
+
 ---
 
 <section id="stack">
   <div class="relative max-sm:-mx-6 overflow-hidden">
     <h2 class="sr-only">Stack</h2>
     {
-      stackGroups.map((group, index) => (
+      STACK.map((group, index) => (
         <div class="mb-4">
           <InfiniteSlider
             items={group}
