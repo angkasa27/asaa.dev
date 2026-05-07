@@ -11,6 +11,15 @@ const toSlug = (value: string) =>
 
 const outputDir = path.resolve(process.cwd(), "src", "assets", "projects");
 
+const resolveOutputFilePath = (project: (typeof PROJECTS)[number]) => {
+  if (project.imageUrl?.startsWith("/projects/")) {
+    return path.resolve(outputDir, project.imageUrl.replace("/projects/", ""));
+  }
+
+  const slug = toSlug(project.title);
+  return path.join(outputDir, `${slug}.jpg`);
+};
+
 const main = async () => {
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
@@ -21,8 +30,14 @@ const main = async () => {
   for (const project of PROJECTS) {
     if (!project.projectUrl) continue;
 
-    const slug = toSlug(project.title);
-    const filePath = path.join(outputDir, `${slug}.jpg`);
+    const filePath = resolveOutputFilePath(project);
+
+    if (fs.existsSync(filePath)) {
+      console.log(
+        `Skipping ${project.title}, image already exists -> ${filePath}`,
+      );
+      continue;
+    }
 
     const page = await browser.newPage({
       viewport: { width: 1366, height: 768 },
