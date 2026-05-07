@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import type { Project } from "@/constants/projects";
 
 const { project } = Astro.props as { project: Project };
@@ -13,13 +14,32 @@ const {
   imageUrl,
 } = project;
 
-const images = import.meta.glob("/src/assets/projects/*.{jpg,jpeg,png}", {
+const toSlug = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)+/g, "");
+
+const images = import.meta.glob("/src/assets/projects/*.{jpg,jpeg,png,webp}", {
   eager: true,
   import: "default",
-});
+}) as Record<string, ImageMetadata>;
 
-const assetPath = imageUrl ? `/src/assets${imageUrl}` : null;
-const image = assetPath && images[assetPath] ? images[assetPath] : null;
+const slug = toSlug(title);
+const preferredAssetPath = imageUrl ? `/src/assets${imageUrl}` : null;
+const fallbackAssetPaths = [
+  `/src/assets/projects/${slug}.jpg`,
+  `/src/assets/projects/${slug}.jpeg`,
+  `/src/assets/projects/${slug}.png`,
+  `/src/assets/projects/${slug}.webp`,
+];
+
+const assetCandidates = preferredAssetPath
+  ? [preferredAssetPath, ...fallbackAssetPaths]
+  : fallbackAssetPaths;
+
+const resolvedAssetPath = assetCandidates.find((assetPath) => images[assetPath]);
+const image = resolvedAssetPath ? images[resolvedAssetPath] : null;
 ---
 
 <div
@@ -36,7 +56,6 @@ const image = assetPath && images[assetPath] ? images[assetPath] : null;
           width={1200}
           height={675}
           format="webp"
-          placeholder="blur"
           class="object-cover w-full relative z-10"
         />
       ) : (
