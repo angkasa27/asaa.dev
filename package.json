@@ -14,31 +14,31 @@
     "screenshots": "tsx scripts/generate-screenshots.ts"
   },
   "dependencies": {
-    "@fontsource/geist-mono": "^5.2.7",
+    "@fontsource/geist-mono": "^5.2.8",
     "@fontsource/geist-sans": "^5.2.5",
     "@iconify/svelte": "^5.2.1",
-    "astro": "^6.1.6",
+    "astro": "^6.3.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "date-fns-tz": "^3.2.0",
     "query-string": "^9.3.1",
     "sharp": "^0.34.5",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
-    "@astrojs/cloudflare": "^13.1.9",
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/cloudflare": "^13.5.1",
     "@astrojs/sitemap": "^3.7.2",
-    "@astrojs/svelte": "^8.0.5",
+    "@astrojs/svelte": "^8.1.1",
     "@astrojs/tailwind": "^6.0.2",
-    "@tailwindcss/postcss": "^4.2.2",
-    "playwright": "^1.59.1",
-    "postcss": "^8.5.9",
-    "svelte": "^5.55.3",
-    "tailwindcss": "^4.2.2",
-    "tsx": "^4.21.0",
+    "@tailwindcss/postcss": "^4.3.0",
+    "playwright": "^1.60.0",
+    "postcss": "^8.5.14",
+    "svelte": "^5.55.7",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.22.1",
     "typescript": "^5.9.3",
-    "wrangler": "^4.82.2"
+    "wrangler": "^4.92.0"
   }
 }
