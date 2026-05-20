@@ -6,21 +6,18 @@ export interface Project {
   projectUrl?: string;
   githubUrl?: string;
   highlight: boolean;
-  // subtitle: string;
   imageUrl?: string;
 }
 
 export const PROJECTS: Project[] = [
   {
-    title: "Kartu.me Link-in-Bio",
+    title: "Kartu.me",
     description:
-      // help me create description from this slogan "just-works, easy-to-use yet highly customizable link-in-bio"
-      "Just-works, easy-to-use yet highly customizable link-in-bio platform that empowers users to create personalized landing pages.",
+      "Just-works, easy-to-use yet highly customizable link-in-bio platform.",
     contribution:
-      "Built an end-to-end resume authoring tool with live canvas editing, layout switching, and PDF/JSON export so users can customize presentation without losing structured content.",
+      "Designed and built a link-in-bio platform that balances simplicity and customization, allowing users to create personalized landing pages with ease while offering flexible design options to suit individual branding needs.",
     tags: ["Link-in-Bio", "Personal Branding"],
     projectUrl: "https://kartu.me/",
-    // githubUrl: "https://github.com/angkasa27/resume-editor",
     highlight: false,
   },
   {
