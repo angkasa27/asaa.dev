@@ -31,17 +31,17 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/angkasa27/resume-editor",
     highlight: false,
   },
-  {
-    title: "Email Operations Dashboard",
-    description:
-      "Internal dashboard for monitoring inbound and outbound company email activity across connected mailboxes.",
-    contribution:
-      "Built a searchable operations dashboard with IMAP sync, message audit trails, and near-real-time monitoring to give the company clearer visibility into email traffic and mailbox health.",
-    // tags: ["Internal Tool", "Operations Dashboard", "Email Monitoring"],
-    tags: ["Internal Tool", "Email Monitoring"],
-    githubUrl: "https://github.com/angkasa27/email-ops-dashboard",
-    highlight: false,
-  },
+  // {
+  //   title: "Email Operations Dashboard",
+  //   description:
+  //     "Internal dashboard for monitoring inbound and outbound company email activity across connected mailboxes.",
+  //   contribution:
+  //     "Built a searchable operations dashboard with IMAP sync, message audit trails, and near-real-time monitoring to give the company clearer visibility into email traffic and mailbox health.",
+  //   // tags: ["Internal Tool", "Operations Dashboard", "Email Monitoring"],
+  //   tags: ["Internal Tool", "Email Monitoring"],
+  //   githubUrl: "https://github.com/angkasa27/email-ops-dashboard",
+  //   highlight: false,
+  // },
   {
     title: "Fighter Den Iswahjudi",
     description: "Marketing website for a gym at Iswahjudi Air Force Base.",
