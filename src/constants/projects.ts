@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
       "Just-works, easy-to-use yet highly customizable link-in-bio platform that empowers users to create personalized landing pages.",
     contribution:
       "Built an end-to-end resume authoring tool with live canvas editing, layout switching, and PDF/JSON export so users can customize presentation without losing structured content.",
-    tags: ["Link-in-Bio", "Personal Branding", "Content Sharing"],
+    tags: ["Link-in-Bio", "Personal Branding"],
     projectUrl: "https://kartu.me/",
     // githubUrl: "https://github.com/angkasa27/resume-editor",
     highlight: false,
