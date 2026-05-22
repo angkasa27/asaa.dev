@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
       "Designed and built a link-in-bio platform that balances simplicity and customization, allowing users to create personalized landing pages with ease while offering flexible design options to suit individual branding needs.",
     tags: ["Link-in-Bio", "Personal Branding"],
     projectUrl: "https://kartu.me/",
-    highlight: false,
+    highlight: true,
   },
   {
     title: "Resume Editor",
@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     tags: ["Community Platform", "GitHub API"],
     projectUrl: "https://dev.moklet.org/",
     githubUrl: "https://github.com/mokletdev/mokletdev",
-    highlight: true,
+    highlight: false,
     imageUrl: "/projects/moklet-dev-community-showcase.png",
   },
   {
