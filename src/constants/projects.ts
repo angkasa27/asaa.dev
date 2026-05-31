@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     imageUrl: "/projects/fighter-den-iswahjudi.jpg",
   },
   {
-    title: "Dwipa Telco Corporate Website",
+    title: "Dwipatelco Corporate Website",
     description:
       "Corporate website for a telecom infrastructure company specializing in fiber optic and tower projects.",
     contribution:
