@@ -21,14 +21,14 @@ export const PROJECTS: Project[] = [
     highlight: true,
   },
   {
-    title: "Resume Editor",
+    title: "Resummme",
     description:
       "No-login resume editor for building structured CVs with swappable layouts and exportable portable data.",
     contribution:
       "Built an end-to-end resume authoring tool with live canvas editing, layout switching, and PDF/JSON export so users can customize presentation without losing structured content.",
     tags: ["Resume Builder", "Document Editor", "Productivity"],
-    projectUrl: "https://resume-editor.asaa.dev/",
-    githubUrl: "https://github.com/angkasa27/resume-editor",
+    projectUrl: "https://resummme.asaa.dev/",
+    githubUrl: "https://github.com/angkasa27/resummme",
     highlight: false,
   },
   // {
