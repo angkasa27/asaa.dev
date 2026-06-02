@@ -7,10 +7,17 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://asaa.dev",
   integrations: [svelte(), sitemap()],
-  output: "static", // Static site generation for optimal performance
+  output: "static",
+  image: {
+    defaultFormat: "webp",
+  },
   vite: {
     css: {
       transformer: "postcss",
+    },
+    build: {
+      minify: "esbuild",
+      cssMinify: true,
     },
   },
 });
