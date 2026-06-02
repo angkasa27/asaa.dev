@@ -4,15 +4,7 @@ import type { ImageMetadata } from "astro";
 import type { Project } from "@/constants/projects";
 
 const { project } = Astro.props as { project: Project };
-const {
-  title,
-  description,
-  // contribution,
-  tags,
-  githubUrl,
-  projectUrl,
-  imageUrl,
-} = project;
+const { title, description, tags, githubUrl, projectUrl, imageUrl } = project;
 
 const toSlug = (value: string) =>
   value
@@ -76,7 +68,6 @@ const image = resolvedAssetPath ? images[resolvedAssetPath] : null;
     <div class="h-full">
       <p class="font-semibold tracking-tight text-base">{title}</p>
       <p class="font-sans text-xs">{description}</p>
-      <!-- <p class="font-sans text-xs">{contribution}</p> -->
     </div>
     <div class="flex gap-1">
       {
