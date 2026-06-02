@@ -37,6 +37,7 @@
 <ButtonIcon
   onclick={toggleTheme}
   class="relative *:absolute *:top-1/2 *:transform *:-translate-y-1/2 *:transition-all *:duration-500 *:ease-out"
+  aria-label="Toggle theme"
 >
   <!-- Moon icon -->
   <svg
