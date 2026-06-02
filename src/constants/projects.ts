@@ -23,9 +23,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Resummme",
     description:
-      "No-login resume editor for building structured CVs with swappable layouts and exportable portable data.",
+      "A free, open-source resume editor that makes it easy to create professional, ATS-friendly resumes with live preview and AI-powered writing assistance.",
     contribution:
-      "Built an end-to-end resume authoring tool with live canvas editing, layout switching, and PDF/JSON export so users can customize presentation without losing structured content.",
+      "Designed and developed a resume editor that combines user-friendly design controls with powerful AI features, enabling users to craft tailored resumes with real-time feedback, AI-driven content improvement, and high-fidelity PDF export, all without needing an account.",
     tags: ["Resume Builder", "Document Editor", "Productivity"],
     projectUrl: "https://resummme.asaa.dev/",
     githubUrl: "https://github.com/angkasa27/resummme",
