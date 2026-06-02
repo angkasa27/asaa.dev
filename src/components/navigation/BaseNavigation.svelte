@@ -1,7 +1,6 @@
 <script lang="ts">
 	import ButtonIcon from "../ui/ButtonIcon.svelte";
 	import ThemeToggle from "../ThemeToggle.svelte";
-	import Icon from "@iconify/svelte";
 
   let { class: className = "" } = $props();
 </script>
@@ -14,7 +13,22 @@
 >
 	<ButtonIcon asChild class="flex items-center justify-center">
 		<a href="/" aria-label="Home">
-			<Icon icon="lucide:home" class="size-5" />
+			<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="size-5"
+        aria-hidden="true"
+      >
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
 		</a>
 	</ButtonIcon>
   <div class="flex items-center gap-4">

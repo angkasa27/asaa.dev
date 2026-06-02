@@ -1,5 +1,7 @@
 ---
 import "../styles/globals.css";
+import { getImage } from "astro:assets";
+import avatarImg from "../assets/avatar.jpeg";
 
 interface Props {
   title?: string;
@@ -14,6 +16,14 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const optimizedAvatar = await getImage({
+  src: avatarImg,
+  format: "webp",
+  width: 112,
+  height: 112,
+  quality: 85,
+});
 ---
 
 <!doctype html>
@@ -49,6 +59,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={new URL(image, Astro.site)} />
+
+    <!-- LCP image preload -->
+    <link
+      rel="preload"
+      href={optimizedAvatar.src}
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
 
     <!-- Fonts -->
     <link

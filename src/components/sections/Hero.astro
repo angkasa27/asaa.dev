@@ -1,5 +1,7 @@
 ---
-import HeroChips from "./HeroChips.svelte";
+import { Image } from "astro:assets";
+import avatarImg from "../../assets/avatar.jpeg";
+import HeroChips from "./HeroChips.astro";
 ---
 
 <section
@@ -19,16 +21,18 @@ import HeroChips from "./HeroChips.svelte";
       Software Engineer | Still fixing some bugs... 👨‍💻
     </p>
     <div class="animate-on-load" style="animation-delay: 160ms">
-      <HeroChips client:load />
+      <HeroChips />
     </div>
   </div>
-  <img
-    src="/avatar.jpeg"
-    alt="GitHub Avatar"
-    width="112"
-    height="112"
+  <Image
+    src={avatarImg}
+    alt="Dimas Angkasa"
+    width={112}
+    height={112}
+    format="webp"
+    quality={85}
     class="rounded-lg size-28 border-primary border-2 avatar-float animate-on-load"
-    loading="lazy"
-    decoding="async"
+    loading="eager"
+    fetchpriority="high"
   />
 </section>
