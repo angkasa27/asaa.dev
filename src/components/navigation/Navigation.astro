@@ -20,11 +20,11 @@ import BaseNavigation from "./BaseNavigation.svelte";
 	</div>
 
 	<div class="hidden md:block relative z-50">
-		<FloatingNavigation client:load />
+		<FloatingNavigation client:idle />
 	</div>
 
 	<div class="flex md:hidden justify-center fixed left-0 right-0 bottom-4 z-50">
-		<BaseNavigation client:load />
+		<BaseNavigation client:idle />
 	</div>
 
 	<div

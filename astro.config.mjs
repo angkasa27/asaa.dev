@@ -8,8 +8,8 @@ export default defineConfig({
   site: "https://asaa.dev",
   integrations: [svelte(), sitemap()],
   output: "static",
-  image: {
-    defaultFormat: "webp",
+  build: {
+    inlineStylesheets: "always",
   },
   vite: {
     css: {

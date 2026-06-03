@@ -45,8 +45,8 @@ const image = resolvedAssetPath ? images[resolvedAssetPath] : null;
         <Image
           src={image}
           alt={`${title} preview`}
-          width={700}
-          height={394}
+          widths={[400, 600, 700]}
+          sizes="(max-width: 640px) 400px, (max-width: 1024px) 600px, 700px"
           format="webp"
           quality={80}
           loading="lazy"
