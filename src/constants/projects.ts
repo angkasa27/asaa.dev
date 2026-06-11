@@ -13,9 +13,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Kartu.me",
     description:
-      "Just-works, easy-to-use yet highly customizable link-in-bio platform.",
+      "Just-works, easy-to-use yet highly customizable link-in-bio platform",
     contribution:
-      "Designed and built a link-in-bio platform that balances simplicity and customization, allowing users to create personalized landing pages with ease while offering flexible design options to suit individual branding needs.",
+      "Designed and built a link-in-bio platform that balances simplicity and customization, allowing users to create personalized landing pages with ease while offering flexible design options to suit individual branding needs",
     tags: ["Link-in-Bio", "Personal Branding"],
     projectUrl: "https://kartu.me/",
     highlight: true,
@@ -23,9 +23,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Resummme",
     description:
-      "A free, open-source resume editor that makes it easy to create professional, ATS-friendly resumes with live preview and AI-powered writing assistance.",
+      "A free, open-source, professional, ATS-friendly resumes editor with live preview and AI-powered writing assistance",
     contribution:
-      "Designed and developed a resume editor that combines user-friendly design controls with powerful AI features, enabling users to craft tailored resumes with real-time feedback, AI-driven content improvement, and high-fidelity PDF export, all without needing an account.",
+      "Designed and developed a resume editor that combines user-friendly design controls with powerful AI features, enabling users to craft tailored resumes with real-time feedback, AI-driven content improvement, and high-fidelity PDF export, all without needing an account",
     tags: ["Resume Builder", "Document Editor", "Productivity"],
     projectUrl: "https://resummme.asaa.dev/",
     githubUrl: "https://github.com/angkasa27/resummme",
@@ -34,9 +34,9 @@ export const PROJECTS: Project[] = [
   // {
   //   title: "Email Operations Dashboard",
   //   description:
-  //     "Internal dashboard for monitoring inbound and outbound company email activity across connected mailboxes.",
+  //     "Internal dashboard for monitoring inbound and outbound company email activity across connected mailboxes",
   //   contribution:
-  //     "Built a searchable operations dashboard with IMAP sync, message audit trails, and near-real-time monitoring to give the company clearer visibility into email traffic and mailbox health.",
+  //     "Built a searchable operations dashboard with IMAP sync, message audit trails, and near-real-time monitoring to give the company clearer visibility into email traffic and mailbox health",
   //   // tags: ["Internal Tool", "Operations Dashboard", "Email Monitoring"],
   //   tags: ["Internal Tool", "Email Monitoring"],
   //   githubUrl: "https://github.com/angkasa27/email-ops-dashboard",
@@ -44,9 +44,9 @@ export const PROJECTS: Project[] = [
   // },
   {
     title: "Fighter Den Iswahjudi",
-    description: "Marketing website for a gym at Iswahjudi Air Force Base.",
+    description: "Marketing website for a gym at Iswahjudi Air Force Base",
     contribution:
-      "Designed and developed a responsive site that packages memberships, facilities, schedules, and contact flows into a clearer visitor journey and a stronger online presence.",
+      "Designed and developed a responsive site that packages memberships, facilities, schedules, and contact flows into a clearer visitor journey and a stronger online presence",
     tags: ["Marketing Website", "Motion Design"],
     highlight: true,
     projectUrl: "https://fighterden.id/",
@@ -55,9 +55,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Dwipatelco Corporate Website",
     description:
-      "Corporate website for a telecom infrastructure company specializing in fiber optic and tower projects.",
+      "Corporate website for a telecom infrastructure company specializing in fiber optic and tower projects",
     contribution:
-      "Rebuilt the company’s public web presence from the ground up, improving how services, company information, vendor flows, and contact entry points are presented to prospects and partners.",
+      "Rebuilt the company’s public web presence from the ground up, improving how services, company information, vendor flows, and contact entry points are presented to prospects and partners",
     tags: ["Corporate Website", "B2B", "Lead Capture"],
     projectUrl: "https://dwipatelco.co.id/",
     highlight: true,
@@ -66,9 +66,9 @@ export const PROJECTS: Project[] = [
   {
     title: "MokletDev Community Showcase",
     description:
-      "Community website that showcases GitHub projects from students, teachers, and alumni of SMK Telkom Malang.",
+      "Community website that showcases GitHub projects from students, teachers, and alumni of SMK Telkom Malang",
     contribution:
-      "Built a browsable project showcase that aggregates repositories through the GitHub API, making community work easier to explore and discover.",
+      "Built a browsable project showcase that aggregates repositories through the GitHub API, making community work easier to explore and discover",
     // tags: ["Community Platform", "GitHub API", "Project Showcase"],
     tags: ["Community Platform", "GitHub API"],
     projectUrl: "https://dev.moklet.org/",
@@ -78,9 +78,9 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Timotius Muliawan Portfolio",
-    description: "Interactive portfolio website for a product designer.",
+    description: "Interactive portfolio website for a product designer",
     contribution:
-      "Crafted a motion-driven portfolio experience with structured case-study storytelling and polished responsive layouts to better communicate the designer’s work and personality.",
+      "Crafted a motion-driven portfolio experience with structured case-study storytelling and polished responsive layouts to better communicate the designer’s work and personality",
     // tags: ["Portfolio Website", "Motion Design", "Case Studies"],
     tags: ["Portfolio Website", "Motion Design"],
     projectUrl: "https://www.timotiusmuliawan.com/",
@@ -90,9 +90,9 @@ export const PROJECTS: Project[] = [
   {
     title: "MeteoID",
     description:
-      "Weather dashboard concept focused on presenting forecast information in a clear and compact interface.",
+      "Weather dashboard concept focused on presenting forecast information in a clear and compact interface",
     contribution:
-      "Built a responsive weather UI that emphasizes quick-glance metrics, forecast cards, and a polished dashboard layout for everyday usability.",
+      "Built a responsive weather UI that emphasizes quick-glance metrics, forecast cards, and a polished dashboard layout for everyday usability",
     tags: ["Dashboard UI", "Weather App"],
     projectUrl: "https://meteoid.vercel.app/",
     githubUrl: "https://github.com/angkasa27/meteoid",
@@ -102,9 +102,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Visual JSON Schema Editor",
     description:
-      "Browser-based tool for building, editing, and validating JSON Schema visually.",
+      "Browser-based tool for building, editing, and validating JSON Schema visually",
     contribution:
-      "Built a structured editor with recursive schema controls, import/export, and live synchronization to make complex schema authoring more approachable than editing raw JSON by hand.",
+      "Built a structured editor with recursive schema controls, import/export, and live synchronization to make complex schema authoring more approachable than editing raw JSON by hand",
     tags: ["Developer Tool", "Interactive UI", "JSON Schema"],
     projectUrl: "https://json-schema-editor.asaa.dev/",
     githubUrl: "https://github.com/angkasa27/json-schema-editor",
@@ -114,9 +114,9 @@ export const PROJECTS: Project[] = [
   {
     title: "neuCentrIX Corporate Website",
     description:
-      "Corporate landing pages for Telkom’s data center and digital infrastructure brand.",
+      "Corporate landing pages for Telkom’s data center and digital infrastructure brand",
     contribution:
-      "Built landing pages that translate enterprise service offerings, certifications, and nationwide coverage into a clearer digital experience for prospective customers.",
+      "Built landing pages that translate enterprise service offerings, certifications, and nationwide coverage into a clearer digital experience for prospective customers",
     tags: ["Enterprise Website", "Corporate Landing Page"],
     // tags: ["Enterprise Website", "Corporate Landing Page", "B2B"],
     projectUrl: "https://neucentrix.telkom.co.id/en/",
@@ -126,9 +126,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Eid Mubarak Digital Card",
     description:
-      "Interactive digital greeting card created for Eid al-Fitr celebrations.",
+      "Interactive digital greeting card created for Eid al-Fitr celebrations",
     contribution:
-      "Designed and built a lightweight celebratory web experience focused on visual presentation, festive interaction, and shareable seasonal messaging.",
+      "Designed and built a lightweight celebratory web experience focused on visual presentation, festive interaction, and shareable seasonal messaging",
     tags: ["Interactive Web", "Seasonal Project", "Frontend"],
     projectUrl: "https://eid-mubarak-project.vercel.app/",
     githubUrl: "https://github.com/angkasa27/eid-mubarak-project",
@@ -138,9 +138,9 @@ export const PROJECTS: Project[] = [
   {
     title: "MyComplaint",
     description:
-      "Digital reporting platform created as a final vocational school project.",
+      "Digital reporting platform created as a final vocational school project",
     contribution:
-      "Designed and developed a web-based complaint and reporting system, helping communicate the product’s purpose and workflow more clearly.",
+      "Designed and developed a web-based complaint and reporting system, helping communicate the product’s purpose and workflow more clearly",
     tags: ["Digital Reporting", "Student Project"],
     projectUrl: "https://angkasa27.github.io/react-tailwind-mycomplaint/",
     githubUrl:
@@ -151,9 +151,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Socied",
     description:
-      "Concept social platform for education, designed during a web design competition with a pandemic-learning theme.",
+      "Concept social platform for education, designed during a web design competition with a pandemic-learning theme",
     contribution:
-      "Built a pure HTML, CSS, and JavaScript prototype in a 40-hour competition setting, translating the idea of a professional-network-style platform into an education-focused product concept.",
+      "Built a pure HTML, CSS, and JavaScript prototype in a 40-hour competition setting, translating the idea of a professional-network-style platform into an education-focused product concept",
     // tags: ["Competition Project", "Educational Platform", "HTML CSS JS"],
     tags: ["Competition Project", "Educational Platform"],
     projectUrl: "https://socied.web.app/",
@@ -164,9 +164,9 @@ export const PROJECTS: Project[] = [
   {
     title: "Traveline",
     description:
-      "Tourism landing page concept created for a web design competition themed around destinations in Indonesia.",
+      "Tourism landing page concept created for a web design competition themed around destinations in Indonesia",
     contribution:
-      "Built a pure HTML, CSS, and JavaScript promotional website that presents Indonesian travel destinations through a clean, campaign-style landing page experience.",
+      "Built a pure HTML, CSS, and JavaScript promotional website that presents Indonesian travel destinations through a clean, campaign-style landing page experience",
     // tags: ["Competition Project", "Tourism Website", "HTML CSS JS"],
     tags: ["Competition Project", "Tourism Website"],
     projectUrl: "https://traveline.web.app/",
