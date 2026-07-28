@@ -12,12 +12,9 @@ export default defineConfig({
     inlineStylesheets: "always",
   },
   vite: {
-    css: {
-      transformer: "postcss",
-    },
     build: {
       minify: "esbuild",
-      cssMinify: true,
+      cssMinify: "esbuild",
     },
   },
 });

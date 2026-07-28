@@ -5,3 +5,5 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - yaml@2.8.3
   - ws@8.20.1
+  - '@astrojs/check@0.9.10'
+  - astro@7.1.4
