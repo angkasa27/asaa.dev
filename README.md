@@ -3,14 +3,12 @@
 A modern, interactive portfolio and personal website for Dimas Angkasa.
 
 ## Features
-- Built with **Next.js** (TypeScript)
+- Built with **Astro** (TypeScript & Svelte)
 - Modular, component-based architecture
-- Responsive design with **Tailwind CSS**
+- Responsive design with **Tailwind CSS v4**
 - Dark/light theme support
+- Clean, minimalist `/resume` and `/projects` showcase pages
 - Animated, interactive main page (hero, bio, stack, projects, contact)
-- Custom 404 and loading pages
-- Uses **shadcn/ui**, **Radix UI**, **Material UI**, and **React Icons**
-- Smooth infinite slider and velocity scroll components
 - Accessible and performant
 
 ## Getting Started
@@ -27,16 +25,12 @@ A modern, interactive portfolio and personal website for Dimas Angkasa.
    ```sh
    pnpm build
    ```
-4. **Deploy:**
-   ```sh
-   pnpm run deploy
-   ```
 
 ## Folder Structure
-- `src/app/` — Next.js app directory (pages, layouts, loading, not-found)
-- `src/components/` — Reusable UI components and fragments
-- `src/containers/` — Main page sections (hero, bio, stack, etc.)
-- `src/constants/` — Static data (stack, projects)
+- `src/pages/` — Astro pages (`index.astro`, `projects.astro`, `resume.astro`, `404.astro`)
+- `src/components/` — Reusable Astro and Svelte UI components
+- `src/layouts/` — Base layout (`BaseLayout.astro`)
+- `src/constants/` — Static data (projects, resume data)
 - `public/` — Static assets
 
 ## License

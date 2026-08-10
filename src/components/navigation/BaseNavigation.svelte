@@ -32,7 +32,7 @@
 		</a>
 	</ButtonIcon>
   <div class="flex items-center gap-4">
-    <a href="/#about">About</a>
+    <a href="/resume">About</a>
     <a href="/projects">Projects</a>
     <a href="/#contact">Contact</a>
   </div>
