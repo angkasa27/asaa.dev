@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
     tags: ["Resume Builder", "Document Editor", "Productivity"],
     projectUrl: "https://resummme.asaa.dev/",
     githubUrl: "https://github.com/angkasa27/resummme",
-    highlight: false,
+    highlight: true,
   },
   // {
   //   title: "Email Operations Dashboard",
@@ -59,9 +59,9 @@ export const PROJECTS: Project[] = [
     contribution:
       "Rebuilt the company’s public web presence from the ground up, improving how services, company information, vendor flows, and contact entry points are presented to prospects and partners",
     tags: ["Corporate Website", "B2B", "Lead Capture"],
-    projectUrl: "https://dwipatelco.co.id/",
-    highlight: true,
-    imageUrl: "/projects/dwipa-telco-corporate-website.jpg",
+    projectUrl: "https://dwipatelco.com/",
+    highlight: false,
+    imageUrl: "/projects/dwipatelco-corporate-website.jpg",
   },
   {
     title: "MokletDev Community Showcase",
