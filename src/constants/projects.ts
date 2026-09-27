@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
     contribution:
       "Rebuilt the company’s public web presence from the ground up, improving how services, company information, vendor flows, and contact entry points are presented to prospects and partners",
     tags: ["Corporate Website", "B2B", "Lead Capture"],
-    projectUrl: "https://dwipatelco.com/",
+    projectUrl: "https://dwipatelco.co.id/",
     highlight: false,
     imageUrl: "/projects/dwipatelco-corporate-website.jpg",
   },
